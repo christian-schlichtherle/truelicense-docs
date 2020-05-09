@@ -1,14 +1,27 @@
 ---
 home: true
+heroImage: /image/wizard-4.png
 actionText: Get Started →
-actionLink: introduction
+actionLink: /guide/getting-started
 features:
-- title: Safety First
-  details: TrueLicense is designed with safety in mind.
-   It supports all the cryptographic standards available to your JVM.
-   Configuration is done entirely through the API, not via text files.
-   String constants can be easily obfuscated.
-   Code obfuscation with ProGuard is supported, too.
+- title: IP Protection
+  details: License keys get digitally signed using a configurable algorithm to protect your intellectual property.
+- title: Privacy Protection
+  details: License keys get encrypted using a configurable algorithm to protect the privacy of your customers. 
+- title: Modern Cryptography
+  details: The API lets you configure all the cryptographic algorithms implemented by the security providers in the JRE.
+- title: Hacker Protection
+  details: Configuration employs a fluent API, not text files, to protect your app from simple reverse engineering.
+- title: Pervasive Obfuscation
+  details: String constants and byte code get obfuscated with the TrueLicense Maven Plugin and ProGuard.
+- title: Small Footprint
+  details: License keys get compressed using a configurable algorithm to save storage and bandwidth.
+- title: Many Options
+  details: Supports free trial periods, subscriptions, multiple editions (feature sets), internationalization and more.
+- title: Many Interfaces
+  details: Provides an API, a CLI, a GUI, a ReST API, and JSF pages.
+- title: Many Modules
+  details: Separate modules make it easy for you to shop for exactly the features, technologies and interfaces you need.
 footer: Apache License, Version 2.0 | Copyright © 2020 Schlichtherle IT Services
 ---
 
@@ -16,7 +29,7 @@ footer: Apache License, Version 2.0 | Copyright © 2020 Schlichtherle IT Service
     <div>
         <a href="https://github.com/christian-schlichtherle/truelicense/releases/latest"><img src="https://img.shields.io/github/v/release/christian-schlichtherle/truelicense" alt="Release Notes"></a>
         <a href="https://search.maven.org/artifact/global.namespace.truelicense/truelicense"><img src="https://img.shields.io/maven-central/v/global.namespace.truelicense/truelicense?cacheSeconds=3600" alt="Maven Central"></a>
-        <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/christian-schlichtherle/truelicense" alt="Apache License 2.0"></a>
+        <a href="https://github.com/christian-schlichtherle/truelicense/blob/master/LICENSE"><img src="https://img.shields.io/github/license/christian-schlichtherle/truelicense" alt="Apache License 2.0"></a>
         <a href="https://travis-ci.org/christian-schlichtherle/truelicense"><img src="https://api.travis-ci.org/christian-schlichtherle/truelicense.svg" alt="Build Status"></a>
     </div>
     <div>
