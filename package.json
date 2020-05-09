@@ -1,0 +1,24 @@
+{
+  "author": "Christian Schlichtherle",
+  "bugs": {
+    "url": "https://github.com/christian-schlichtherle/truelicense/issues"
+  },
+  "description": "Static site generator for the TrueLicense documentation",
+  "devDependencies": {
+    "vuepress": "^1.4.1"
+  },
+  "homepage": "https://github.com/christian-schlichtherle/truelicense",
+  "keywords": [
+    "TrueLicense",
+    "documentation",
+    "open source",
+    "license management"
+  ],
+  "license": "Apache-2.0",
+  "name": "truelicense-documentation",
+  "repository": "github:christian-schlichtherle/truelicense",
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs"
+  }
+}
