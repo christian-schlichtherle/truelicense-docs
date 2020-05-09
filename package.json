@@ -10,12 +10,18 @@
   "homepage": "https://github.com/christian-schlichtherle/truelicense",
   "keywords": [
     "TrueLicense",
-    "documentation",
     "open source",
-    "license management"
+    "license management",
+    "JVM",
+    "Java",
+    "docs",
+    "documentation",
+    "manual",
+    "guide",
+    "reference"
   ],
   "license": "Apache-2.0",
-  "name": "truelicense-documentation",
+  "name": "truelicense-docs",
   "repository": "github:christian-schlichtherle/truelicense",
   "scripts": {
     "docs:build": "vuepress build docs",
