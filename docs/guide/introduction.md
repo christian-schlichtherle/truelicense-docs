@@ -39,8 +39,8 @@ You can customize the project for your software product without writing code by
 + Generate a GUI for consuming license keys.
 + Generate a ReST-based WSI for consuming license keys.
 + Use the TrueLicense Maven Plugin to obfuscate string constants.
-+ Use ProGuard to obfuscate the byte code.
-+ Assemble all license consumer JARS into a standalone JAR.
++ Assemble all dependencies into a standalone JAR.
++ Use ProGuard to obfuscate the standalone JAR into a guarded JAR.
 + Use Git or Mercurial as your VCS. 
 
 ## License
