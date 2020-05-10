@@ -136,7 +136,15 @@ As you can see, the installed license key has the "Not After" property set in or
 
 It's not possible to uninstall an FTP license key!
 A user can only override it by installing a regular license key.
-When the user uninstalls the regular license key again, the FTP license key takes over again.
+When the user uninstalls the regular license key, the FTP license key takes over again.
+
+:::
+
+::: tip
+
+If you require your users to register before starting a free trial period, then you should not use this feature and
+consider configuring [multiple editions](/guide/example-configs.html#multiple-editions) instead.
+In that case, the edition string could look like "standard ftp".   
 
 :::
 

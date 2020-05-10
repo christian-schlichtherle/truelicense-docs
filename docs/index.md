@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /image/wizard-4.png
+heroImage: /image/ftp/wizard-2.png
 actionText: Get Started →
 actionLink: /guide/getting-started
 features:
