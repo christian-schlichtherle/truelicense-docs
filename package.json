@@ -5,20 +5,29 @@
   },
   "description": "Static site generator for the TrueLicense documentation",
   "devDependencies": {
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-deflist": "^2.0.3",
     "vuepress": "^1.4.1"
   },
   "homepage": "https://github.com/christian-schlichtherle/truelicense",
   "keywords": [
     "TrueLicense",
-    "documentation",
     "open source",
-    "license management"
+    "license management",
+    "JVM",
+    "Java",
+    "docs",
+    "documentation",
+    "manual",
+    "guide",
+    "reference"
   ],
   "license": "Apache-2.0",
-  "name": "truelicense-documentation",
+  "name": "truelicense-docs",
   "repository": "github:christian-schlichtherle/truelicense",
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs"
-  }
+  },
+  "version": "0.1.0"
 }
