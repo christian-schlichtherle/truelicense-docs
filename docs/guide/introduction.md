@@ -47,7 +47,11 @@ You can customize the project for your software product without writing code by
 
 Before version 4, TrueLicense and the TrueLicense Maven Archetype were covered by the GNU Affero General Public License,
 Version 3.
-Since version 4, it is covered by the Apache License, Version 2.0.
+Since version 4,
+TrueLicense is covered by the
+[Apache License 2.0](https://github.com/christian-schlichtherle/truelicense/blob/master/LICENSE),
+and the TrueLicense Maven Archetype is covered by the
+[MIT License](https://github.com/christian-schlichtherle/truelicense-maven-archetype/blob/master/LICENSE).
 
 *[API]: Application Programming Interface
 *[CLI]: Command Line Interface
