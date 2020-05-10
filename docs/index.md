@@ -19,7 +19,7 @@ features:
 - title: Many Options
   details: Supports free trial periods, subscriptions, multiple editions (feature sets), internationalization and more.
 - title: Many Interfaces
-  details: Provides an API, a CLI, a GUI, a ReST API, and JSF pages.
+  details: Provides an API, a CLI, a GUI, a ReST-based WSI, and JSF pages.
 - title: Many Modules
   details: Separate modules make it easy for you to shop for exactly the features, technologies and interfaces you need.
 footer: Apache License, Version 2.0 | Copyright © 2020 Schlichtherle IT Services

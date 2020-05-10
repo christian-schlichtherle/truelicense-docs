@@ -2,11 +2,17 @@
 sidebarDepth: 2
 ---
 
-# Config Properties
+# Configuration Properties
 
 Following is the list of configuration properties for generating a project from the TrueLicense Maven Archetype in 
 alphabetic order.
-Note that property names and values are generally case-sensitive.
+Please check the [Example Configurations](/guide/example-configs) to see how to apply these properties.
+
+::: tip
+
+Property names and values are case-sensitive.
+
+:::
 
 ::: warning
 
@@ -147,12 +153,12 @@ unless both projects **also share the following key store files** (see below for
 
 **Type**
 
-:   Select `compile` to declare that custom classes are available on the class path at compile time.
+:   Enter `compile` to declare that custom classes are available on the class path at compile time.
     The advantage is that the classes can be safely included in the byte code obfuscation process.
     The disadvantage is that the classes need to be known at compile time so that manual editing of the dependencies in
     the generated POM files for the Key Generator or Key Manager module may be necessary.
 
-    Select `runtime` to declare that custom classes are available on the class path at runtime only.
+    Enter `runtime` to declare that custom classes are available on the class path at runtime only.
     The advantage is that the classes don't need to be known at compile time so that manual editing of the generated POM
     files should not be necessary.
     The disadvantage is that the classes need to be generally excluded from the byte code obfuscation process, e.g. for
@@ -171,7 +177,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   Whether the Swing wizard dialog in the Key Manager module should be disabled or not.
-    Select `true` to cut the dependency on the TrueLicense Swing module and reduce the code size.
+    Enter `true` to cut the dependency on the TrueLicense Swing module and reduce the code size.
 
     &nbsp;
 
@@ -205,7 +211,7 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The number of days for an auto-generated Free Trial Period" (FTP).
+:   The number of days for an auto-generated Free Trial Period (FTP).
     Needs to be a non-negative integer, e.g. `30`.
     Specify `0` to disable the auto-generation of FTP license keys.
 
@@ -281,9 +287,9 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The fully qualified name of a class implementing the interface
-    `global.namespace.truelicense.api.LicenseManagementAuthorization` for use in the Key Generator module.
-    Select `-` to use no license authorization.
+:   An expression of the type `global.namespace.truelicense.api.LicenseManagementAuthorization` for use in the Key 
+    Generator module.
+    Enter `-` to use no license authorization.
 
     &nbsp;
 
@@ -299,9 +305,8 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The fully qualified name of a class implementing the interface
-    `global.namespace.truelicense.api.LicenseValidation` for use in the Key Generator module.
-    Select `-` to use only the built-in license validation function.
+:   An expression of the type `global.namespace.truelicense.api.LicenseValidation` for use in the Key Generator module.
+    Enter `-` to use only the built-in license validation function.
 
     &nbsp;
 
@@ -324,8 +329,8 @@ unless both projects **also share the following key store files** (see below for
 
 **Type**
 
-:   Select `override` to apply only the custom function.
-    Select `decorate` to apply both the custom function and the built-in function.
+:   Enter `override` to apply only the custom function.
+    Enter `decorate` to apply both the custom function and the built-in function.
 
 **Default**
 
@@ -335,9 +340,9 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The fully qualified name of a class implementing the interface
-    `global.namespace.truelicense.api.LicenseManagementAuthorization` for use in the Key Manager module.
-    Select `-` to use no license authorization.
+:   An expression of the type `global.namespace.truelicense.api.LicenseManagementAuthorization` for use in the Key 
+    Manager module.
+    Enter `-` to use no license authorization.
 
     &nbsp;
 
@@ -353,9 +358,8 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The fully qualified name of a class implementing the abstract class `java.time.Clock` for use in the Key Manager
-    module.
-    Select `-` to use the system clock.
+:   An expression of the type `java.time.Clock` for use in the Key Manager module.
+    Enter `-` to use the system clock.
 
     &nbsp;
 
@@ -371,9 +375,8 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The fully qualified name of a class implementing the interface
-    `global.namespace.truelicense.api.LicenseValidation` for use in the Key Manager module.
-    Select `-` to use only the built-in license validation function.
+:   An expression of the type `global.namespace.truelicense.api.LicenseValidation` for use in the Key Manager module.
+    Enter `-` to use only the built-in license validation function.
 
     &nbsp;
 
@@ -396,8 +399,8 @@ unless both projects **also share the following key store files** (see below for
 
 **Type**
 
-:   Select `override` to apply only the custom function.
-    Select `decorate` to apply both the custom function and the built-in function.
+:   Enter `override` to apply only the custom function.
+    Enter `decorate` to apply both the custom function and the built-in function.
 
 **Default**
 
@@ -482,13 +485,13 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The format of the license keys.
-    Select `V4` to benefit from the latest cryptographic standards.
+    Enter `V4` to benefit from the latest cryptographic standards.
     It was introduced in TrueLicense 4 and depends on the Jackson JSON Processor.
-    Select `V2/JSON` only if you need to retain compatibility with this license key format.
+    Enter `V2/JSON` only if you need to retain compatibility with this license key format.
     It was introduced in TrueLicense 2 and depends on the Jackson JSON Processor.
-    Select `V2/XML` only if you need to retain compatibility with this license key format.
+    Enter `V2/XML` only if you need to retain compatibility with this license key format.
     It was introduced in TrueLicense 2 and depends on the JAXB API and runtime.
-    Select `V1` only if you need to retain compatibility with this license key format.
+    Enter `V1` only if you need to retain compatibility with this license key format.
     It was introduced in TrueLicense 1.
 
     &nbsp;
@@ -685,7 +688,7 @@ unless both projects **also share the following key store files** (see below for
 
 **Description**
 
-:   The TrueLicense version to depend upon.
+:   The TrueLicense version to use.
 
     &nbsp;
 
@@ -695,13 +698,13 @@ unless both projects **also share the following key store files** (see below for
 
 **Default**
 
-:   The version of the latest release.
+:   The version of the latest release as of the release date of the TrueLicense Maven Archetype.
 
 ### `verboseCli`
 
 **Description**
 
-:   Whether the CLI (Command Line Interface) should write debugging information to the standard error stream by default
+:   Whether the command line interface (CLI) should write debugging information to the standard error stream by default
     or not.
 
     &nbsp;

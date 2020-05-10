@@ -5,6 +5,7 @@
   },
   "description": "Static site generator for the TrueLicense documentation",
   "devDependencies": {
+    "markdown-it-abbr": "^1.0.4",
     "markdown-it-deflist": "^2.0.3",
     "vuepress": "^1.4.1"
   },

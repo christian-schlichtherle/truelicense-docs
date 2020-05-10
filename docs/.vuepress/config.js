@@ -1,7 +1,7 @@
 module.exports = {
     description: 'An open source engine for license management on the JVM',
     markdown: {
-        extendMarkdown: md => md.use(require('markdown-it-deflist'))
+        extendMarkdown: md => ['abbr', 'deflist'].forEach(plugin => md.use(require('markdown-it-' + plugin)))
     },
     themeConfig: {
         docsBranch: 'develop',
@@ -26,6 +26,8 @@ module.exports = {
             '/guide/': [
                 'introduction',
                 'getting-started',
+                'directory-tree',
+                'example-configs',
             ],
         }
     },

@@ -2,7 +2,8 @@
 
 # TrueLicense Docs
 
-This is the source code repository for the documentation website [truelicense.net](https://truelicense.net).
+This is the source code repository for the documentation website
+[truelicense.namespace.global](https://truelicense.namespace.global).
 
 ## Git Flow
 
