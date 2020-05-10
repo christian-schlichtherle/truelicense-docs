@@ -8,6 +8,24 @@ Following is the list of configuration properties for generating a project from 
 alphabetic order.
 Note that property names and values are generally case-sensitive.
 
+::: warning
+
+If you want to change any of these properties,
+then it’s generally necessary to **regenerate the project** from the TrueLicense Maven Archetype.
+
+:::
+
+::: danger
+
+Even if all their properties are equal, the license keys of any two generated projects will not be compatible
+unless both projects **also share the following key store files** (see below for property defaults):
+
++ `keygen/src/main/resources/${privateKeyStoreFile}`
++ `keymgr/src/main/resources/${ftpKeyStoreFile}`
++ `keymgr/src/main/resources/${publicKeyStoreFile}`
+
+:::
+
 ## Required Properties
 
 ### `artifactId`
