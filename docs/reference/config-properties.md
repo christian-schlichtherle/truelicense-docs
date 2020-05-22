@@ -230,7 +230,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The path of the FTP keystore file in the Key Manager module relative to the base path
-    `${artifactId}-keymgr/src/main/resources/`.
+    `keymgr/src/main/resources/`.
     This property gets ignored if the property `freeTrialPeriod` is `0`.
     Otherwise, if it's `-`, then it gets overridden by the property `publicKeyStoreFile`.
 
@@ -589,7 +589,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The path of the private keystore file in the Key Generator module relative to the base path
-    `${artifactId}-keygen/src/main/resources/`.
+    `keygen/src/main/resources/`.
 
     &nbsp;
 
@@ -606,7 +606,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The path of the public keystore file in the Key Manager module relative to the base path
-    `${artifactId}-keymgr/src/main/resources/`.
+    `keymgr/src/main/resources/`.
 
     &nbsp;
 

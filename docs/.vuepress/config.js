@@ -20,14 +20,14 @@ module.exports = {
         ],
         repo: 'christian-schlichtherle/truelicense-docs',
         sidebar: {
-            '/reference/': [
-                'config-properties',
-            ],
             '/guide/': [
                 'introduction',
                 'getting-started',
                 'directory-tree',
                 'example-configs',
+            ],
+            '/reference/': [
+                'config-properties',
             ],
         }
     },
