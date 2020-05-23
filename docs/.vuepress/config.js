@@ -23,8 +23,8 @@ module.exports = {
             '/guide/': [
                 'introduction',
                 'getting-started',
-                'project-structure',
                 'example-configs',
+                'project-structure',
             ],
             '/reference/': [
                 'config-properties',
