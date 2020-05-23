@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Project Structure | TrueLicense</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="An open source engine for license management on the JVM">
+    <link rel="preload" href="/assets/css/0.styles.aa6d0e5c.css" as="style"><link rel="preload" href="/assets/js/app.da215614.js" as="script"><link rel="preload" href="/assets/js/2.950eac3e.js" as="script"><link rel="preload" href="/assets/js/8.811de2ff.js" as="script"><link rel="prefetch" href="/assets/js/10.30469b9b.js"><link rel="prefetch" href="/assets/js/11.6b7fed95.js"><link rel="prefetch" href="/assets/js/3.cc51bdbc.js"><link rel="prefetch" href="/assets/js/4.6bd23e0e.js"><link rel="prefetch" href="/assets/js/5.ca0999d6.js"><link rel="prefetch" href="/assets/js/6.2470179c.js"><link rel="prefetch" href="/assets/js/7.3ae8dcc2.js"><link rel="prefetch" href="/assets/js/9.52abf1c1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa6d0e5c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TrueLicense</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/introduction.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/reference/config-properties.html" class="nav-link">
+  Reference
+</a></div> <a href="https://github.com/christian-schlichtherle/truelicense-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/introduction.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/reference/config-properties.html" class="nav-link">
+  Reference
+</a></div> <a href="https://github.com/christian-schlichtherle/truelicense-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/guide/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/guide/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/guide/project-structure.html" class="active sidebar-link">Project Structure</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/project-structure.html#layout" class="sidebar-link">Layout</a></li><li class="sidebar-sub-header"><a href="/guide/project-structure.html#explanation" class="sidebar-link">Explanation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/project-structure.html#general" class="sidebar-link">General</a></li><li class="sidebar-sub-header"><a href="/guide/project-structure.html#top-level" class="sidebar-link">Top Level</a></li><li class="sidebar-sub-header"><a href="/guide/project-structure.html#key-generator" class="sidebar-link">Key Generator</a></li><li class="sidebar-sub-header"><a href="/guide/project-structure.html#key-manager" class="sidebar-link">Key Manager</a></li><li class="sidebar-sub-header"><a href="/guide/project-structure.html#key-manager-service" class="sidebar-link">Key Manager Service</a></li></ul></li></ul></li><li><a href="/guide/example-configs.html" class="sidebar-link">Example Configurations</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="project-structure"><a href="#project-structure" class="header-anchor">#</a> Project Structure</h1> <h2 id="layout"><a href="#layout" class="header-anchor">#</a> Layout</h2> <p>When using the TrueLicense Maven Archetype, the following directory tree gets created:</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├── .gitignore
+├── .hgignore
+├── .mvn
+│   └── wrapper
+│       ├── MavenWrapperDownloader.java
+│       ├── maven-wrapper.jar
+│       └── maven-wrapper.properties
+├── build.log
+├── keygen
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   ├── filtered
+│       │   │   └── com
+│       │   │       └── company
+│       │   │           └── product
+│       │   │               └── keygen
+│       │   │                   └── Main.properties
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── company
+│       │   │           └── product
+│       │   │               └── keygen
+│       │   │                   ├── LicenseManager.java.vtl
+│       │   │                   └── Main.java.vtl
+│       │   └── resources
+│       │       └── private.ks
+│       └── test
+│           └── java
+│               └── com
+│                   └── company
+│                       └── product
+│                           └── keygen
+│                               └── MainIT.java.vtl
+├── keymgr
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   ├── filtered
+│       │   │   └── com
+│       │   │       └── company
+│       │   │           └── product
+│       │   │               └── keymgr
+│       │   │                   └── Main.properties
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── company
+│       │   │           └── product
+│       │   │               └── keymgr
+│       │   │                   ├── LicenseManager.java.vtl
+│       │   │                   └── Main.java.vtl
+│       │   └── resources
+│       │       └── public.ks
+│       └── test
+│           └── java
+│               └── com
+│                   └── company
+│                       └── product
+│                           └── keymgr
+│                               ├── LicenseManagerIT.java.vtl
+│                               └── MainIT.java.vtl
+├── keymgr-service
+│   ├── pom.xml
+│   └── src
+│       └── main
+│           └── java
+│               └── com
+│                   └── company
+│                       └── product
+│                           └── keymgr
+│                               └── service
+│                                   └── Main.java.vtl
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>In this example, the property <code>package</code> is set to <code>com.company.product</code>.</p></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>You need to make the <code>mvnw*</code> executable if you want to use the Maven wrapper.
+On Linux (or macOS), execute the following command:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">chmod</span> +x mvnw
+</code></pre></div></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The next thing you should do is to check this project in to a version control system.
+The project already contains <code>.gitignore</code> and <code>.hgignore</code> files for this purpose.</p></div> <h2 id="explanation"><a href="#explanation" class="header-anchor">#</a> Explanation</h2> <p>In the following lists, the pattern <code>**</code> refers to any valid directory path name, whereas <code>*</code> refers to any substring of
+a single path name element:</p> <h3 id="general"><a href="#general" class="header-anchor">#</a> General</h3> <dl><dt><strong><code>**/pom.xml</code></strong></dt> <dd><p>These files are <a href="https://maven.apache.org" target="_blank" rel="noopener noreferrer">Apache Maven<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://maven.apache.org/guides/introduction/introduction-to-the-pom.html" target="_blank" rel="noopener noreferrer">POM<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>s.
+Each module has its own POM to define how Maven should build and eventually deploy it.</p> <p></p></dd> <dt><strong><code>**/*.java.vtl</code></strong></dt> <dd><p>These files are <a href="https://velocity.apache.org" target="_blank" rel="noopener noreferrer">Apache Velocity<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> templates for generating Java source files.
+When generating sources, the TrueLicense Maven Plugin merges each template with the Maven properties into a Java
+source file.</p></dd></dl> <h3 id="top-level"><a href="#top-level" class="header-anchor">#</a> Top Level</h3> <dl><dt><strong><code>pom.xml</code></strong></dt> <dd><p>This file defines the values of the <a href="/reference/config-properties.html">configuration properties</a> for use by the other
+POM files.
+These properties define the algorithms and parameters used by the generated code to implement the licensing schema
+for your software product.</p> <p>For most of these properties, you can simply edit their values and re-run the build.
+However, some properties control the dependencies required by the build system or some other part of it.
+<strong>If you want to change any of these properties, you need to regenerate the project and copy the keystore files
+over from the old project to the new project - see below.</strong></p></dd></dl> <h3 id="key-generator"><a href="#key-generator" class="header-anchor">#</a> Key Generator</h3> <dl><dt><strong><code>keygen/</code></strong></dt> <dd><p>This directory defines the module for exposing an <abbr title="Application Programming Interface">API</abbr> and a <abbr title="Command Line Interface">CLI</abbr> to generate license keys.
+You can use the <abbr title="Command Line Interface">CLI</abbr> of this module to generate license keys.</p> <p><strong>This module needs to be kept under lock and key - never distribute it!</strong></p></dd> <dt><strong><code>keygen/src/main/java/com/company/product/keygen/LicenseManager.java.vtl</code></strong></dt> <dd><p>This file implements the vendor part of your licensing schema for use within your license key generator.</p></dd> <dt><strong><code>keygen/src/main/resources/private.ks</code></strong></dt> <dd><p>This keystore file contains the private key entry used to generate regular license keys.
+The exact name of its path depends on the value of the property
+<a href="/reference/config-properties.html#privatekeystorefile">privateKeyStoreFile</a>.</p> <p>When a project gets created this file doesn't exist yet!
+Maven will automatically create it upon the first build.
+<strong>When regenerating your project, you need to copy this file into the new project or otherwise you cannot generate
+new license keys for older versions of your software product!</strong></p></dd></dl> <h3 id="key-manager"><a href="#key-manager" class="header-anchor">#</a> Key Manager</h3> <dl><dt><strong><code>keymgr/</code></strong></dt> <dd><p>This directory defines the module for exposing an <abbr title="Application Programming Interface">API</abbr>, a <abbr title="Command Line Interface">CLI</abbr> and a <abbr title="Graphical User Interface">GUI</abbr> to consume license keys.
+Your software product uses the <abbr title="Application Programming Interface">API</abbr> of this module for installing, loading, verifying or uninstalling license keys.</p> <p><strong>When adding this module as a dependency to your software product, you need to generate a standalone <abbr title="Java ARchive">JAR</abbr> and
+obfuscate it in order to prevent your software product from being vulnerable to an attack where the classes in the
+TrueLicense Core module would be replaced with a stub!</strong></p></dd> <dt><strong><code>keymgr/pom.xml</code></strong></dt> <dd><p>This POM contains a sample configuration for ProGuard which is used for obfuscating the standalone <abbr title="Java ARchive">JAR</abbr> with the
+command line interface (and the Licensing Wizard <abbr title="Graphical User Interface">GUI</abbr> unless its
+<a href="/reference/config-properties.html#disablewizard">disabled</a>) of this module.</p></dd> <dt><strong><code>keymgr/src/main/java/com/company/product/keymgr/LicenseManager.java.vtl</code></strong></dt> <dd><p>This file implements the consumer part of your licensing schema for use within your software product.</p></dd> <dt><strong><code>keymgr/src/main/resources/public.ks</code></strong></dt> <dd><p>This keystore file contains the trusted certificate entry used to consume regular license keys.
+If you have configured a <a href="/guide/example-configs.html#free-trial-period">Free Trial Period</a> for your software
+product, then it also contains the private key entry used to generate FTP license keys.
+The exact name of its path depends on the value of the properties
+<a href="/reference/config-properties.html#publickeystorefile">publicKeyStoreFile</a> and
+<a href="/reference/config-properties.html#ftpkeystorefile">ftpKeyStoreFile</a>, respectively.</p> <p>When a project gets created this file doesn't exist yet!
+Maven will automatically create it upon the first build.
+<strong>When regenerating your project, you need to copy this file into the new project or otherwise existing regular
+license keys and FTP license keys for your software product get invalidated!</strong></p></dd></dl> <h3 id="key-manager-service"><a href="#key-manager-service" class="header-anchor">#</a> Key Manager Service</h3> <dl><dt><strong><code>keymgrsrv/</code></strong></dt> <dd><p>This directory defines the module for exposing a Web Service Interface (<abbr title="Web Service Interface">WSI</abbr>) to consume license keys.
+You can ignore this module if you don’t want to expose a <abbr title="Web Service Interface">WSI</abbr> for consuming license keys.</p> <p></p></dd></dl></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/christian-schlichtherle/truelicense-docs/edit/develop/docs/guide/project-structure.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub!</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/getting-started.html" class="prev">
+        Getting Started
+      </a></span> <span class="next"><a href="/guide/example-configs.html">
+        Example Configurations
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.da215614.js" defer></script><script src="/assets/js/2.950eac3e.js" defer></script><script src="/assets/js/8.811de2ff.js" defer></script>
+  </body>
+</html>
