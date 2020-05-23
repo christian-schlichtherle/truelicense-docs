@@ -32,7 +32,7 @@ chmod +x mvnw
 ```
 
 For a complete list of properties, please check the [Configuration Properties](/reference/config-properties.html) page.
-Please also check the [Example Configurations](/guide/example-configs.html) page.
+Please also check the [Example Configurations](example-configs.html) page.
 
 ::: tip
 
@@ -104,7 +104,7 @@ In the rare event that a user wants to uninstall a license key, this can be done
 ::: tip
 
 This feature can get removed from the GUI with the property
-[hideUninstallAction](/guide/example-configs.html#hide-uninstall-action).
+[hideUninstallAction](example-configs.html#hide-uninstall-action).
 
 :::
 
@@ -115,7 +115,7 @@ This feature can get removed from the GUI with the property
 ## Free Trial Period (FTP)
 
 You can configure a free trial period for your software product - see
-[Free Trial Period](/guide/example-configs.html#free-trial-period) example.
+[Free Trial Period](example-configs.html#free-trial-period) example.
 If you follow this example, then a license key with a term of thirty days gets automatically generated for the user at
 first use.
 Once the FTP license key expires, the user needs to have a regular license key installed in order to continue using your
@@ -143,7 +143,7 @@ When the user uninstalls the regular license key, the FTP license key takes over
 ::: tip
 
 If you require your users to register before starting a free trial period, then you should not use this feature and
-consider configuring [multiple editions](/guide/example-configs.html#multiple-editions) instead.
+consider configuring [multiple editions](example-configs.html#multiple-editions) instead.
 In that case, the edition string could look like "standard ftp".   
 
 :::

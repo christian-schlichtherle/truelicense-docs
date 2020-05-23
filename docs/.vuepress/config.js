@@ -25,6 +25,7 @@ module.exports = {
                 'getting-started',
                 'example-configs',
                 'project-structure',
+                'setting-up-a-vcs',
             ],
             '/reference/': [
                 'config-properties',
