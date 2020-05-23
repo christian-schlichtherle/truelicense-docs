@@ -28,7 +28,7 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:generate --batch-mode \
     -Dversion='1.0-SNAPSHOT'
 cd stargazer
 chmod +x mvnw
-./mvnw clean verify
+./mvnw clean verify -Pintegration-test
 ```
 
 For a complete list of properties, please check the [Configuration Properties](/reference/config-properties.html) page.
