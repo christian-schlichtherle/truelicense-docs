@@ -10,11 +10,11 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub!',
         nav: [
             {
-                link: '/guide/introduction',
+                link: '/guide/introduction.html',
                 text: 'Guide',
             },
             {
-                link: '/reference/config-properties',
+                link: '/reference/config-properties.html',
                 text: 'Reference',
             },
         ],
@@ -23,7 +23,7 @@ module.exports = {
             '/guide/': [
                 'introduction',
                 'getting-started',
-                'directory-tree',
+                'project-structure',
                 'example-configs',
             ],
             '/reference/': [

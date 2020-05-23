@@ -1,7 +1,7 @@
 # Example Configurations
 
 This page shows some example configurations which you can use when generating your project.
-For a complete list of properties, please check the [Configuration Properties](/reference/config-properties).
+For a complete list of properties, please check the [Configuration Properties](/reference/config-properties.html) page.
 
 ## Basic
 

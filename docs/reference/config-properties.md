@@ -6,7 +6,7 @@ sidebarDepth: 2
 
 Following is the list of configuration properties for generating a project from the TrueLicense Maven Archetype in 
 alphabetic order.
-Please check the [Example Configurations](/guide/example-configs) to see how to apply these properties.
+Please check the [Example Configurations](/guide/example-configs.html) page to see how to apply these properties.
 
 ::: tip
 
@@ -16,15 +16,15 @@ Property names and values are case-sensitive.
 
 ::: warning
 
-If you want to change any of these properties,
+If you want to change the value of these properties,
 then it’s generally necessary to **regenerate the project** from the TrueLicense Maven Archetype.
 
 :::
 
 ::: danger
 
-Even if all their properties are equal, the license keys of any two generated projects will not be compatible
-unless both projects **also share the following key store files** (see below for property defaults):
+Even if all their property values are equal, the license keys of any two generated projects will not be compatible
+unless both projects **also share the following key store files** (see below for default values):
 
 + `keygen/src/main/resources/${privateKeyStoreFile}`
 + `keymgr/src/main/resources/${ftpKeyStoreFile}`
@@ -96,13 +96,13 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The license management subject.
-    This property gets stored in the generated license keys and is used for validation.
+    The value of this property gets stored in the generated license keys and is used for validation.
     A `global.namespace.truelicense.api.LicenseValidationException` gets thrown if the validation fails.
     It's best practice including the name of your software product, and a version number range for which the license
     keys are valid, e.g. `Product 1` or `Product 1.X`.
     The license validation step compares the entire string, so the version number format doesn't matter.
-    If you want to obsolete existing license keys in a future release then all you need to do is to change this
-    property, e.g. to `Product 2` or `Product 2.X`.
+    If you want to obsolete existing license keys in a future release then all you need to do is to change the value of
+    this property, e.g. to `Product 2` or `Product 2.X`.
 
     &nbsp;
 
@@ -138,7 +138,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -168,7 +168,7 @@ unless both projects **also share the following key store files** (see below for
     TrueLicense generates code for dynamic class loading which is correctly recognized and obfuscated by ProGuard so
     that it's safe to use this option with ProGuard.
 
-**Default**
+**Default Value**
 
 :   `compile`
 
@@ -177,7 +177,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   Whether the Swing wizard dialog in the Key Manager module should be disabled or not.
-    Enter `true` to cut the dependency on the TrueLicense Swing module and reduce the code size.
+    Enter `true` to remove the dependency on the TrueLicense Swing module and reduce the code size.
 
     &nbsp;
 
@@ -185,7 +185,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [boolean](https://www.w3.org/TR/xmlschema-2/#boolean)
 
-**Default**
+**Default Value**
 
 :   `false`
 
@@ -203,7 +203,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   A space separated list of valid identifiers in the Java language.
 
-**Default**
+**Default Value**
 
 :   `standard`
 
@@ -221,7 +221,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [nonNegativeInteger](https://www.w3.org/TR/xmlschema-2/#nonNegativeInteger)
 
-**Default**
+**Default Value**
 
 :   `0`
 
@@ -231,8 +231,8 @@ unless both projects **also share the following key store files** (see below for
 
 :   The path of the FTP keystore file in the Key Manager module relative to the base path
     `keymgr/src/main/resources/`.
-    This property gets ignored if the property `freeTrialPeriod` is `0`.
-    Otherwise, if it's `-`, then it gets overridden by the property `publicKeyStoreFile`.
+    This property gets ignored if the property [freeTrialPeriod](#freetrialperiod) is set to `0`.
+    Otherwise, if this property is set to `-`, then it gets overridden by the property [publicKeyStoreFile](#publickeystorefile).
 
     &nbsp;
 
@@ -240,7 +240,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -250,8 +250,8 @@ unless both projects **also share the following key store files** (see below for
 
 :   A fully qualified binary class name which declares the user or system preferences node to use for storing the
     auto-generated FTP license key.
-    This property gets ignored if the property `freeTrialPeriod` is set to `0`.
-    Otherwise, the **package name** of the referenced class needs to be kept **absolutely secret** because removing the
+    This property gets ignored if the property [freeTrialPeriod](#freetrialperiod) is set to `0`.
+    Otherwise, the **package name** of the referenced class needs to be **kept secret** because removing the
     FTP license key from the preferences' node triggers the auto-generation of another FTP license key!
     The named class gets dynamically loaded at run time, so it doesn't have to be on the compile-time class path of the
     Key Manager module.
@@ -262,7 +262,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -279,7 +279,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [boolean](https://www.w3.org/TR/xmlschema-2/#boolean)
 
-**Default**
+**Default Value**
 
 :   `false`
 
@@ -297,7 +297,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -314,7 +314,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -323,7 +323,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   Selects the composition strategy for license validation functions in the Key Generator module.
-    This property gets ignored if the property `keyGenValidation` is `-`.
+    This property gets ignored if the property [keyGenValidation](#keygenvalidation) is set to `-`.
 
     &nbsp;
 
@@ -332,7 +332,7 @@ unless both projects **also share the following key store files** (see below for
 :   Enter `override` to apply only the custom function.
     Enter `decorate` to apply both the custom function and the built-in function.
 
-**Default**
+**Default Value**
 
 :   `decorate`
 
@@ -350,7 +350,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -367,7 +367,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -384,7 +384,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `-`
 
@@ -393,7 +393,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   Selects the composition strategy for license validation functions in the Key Manager module.
-    This property gets ignored if the property `keyMgrValidation` is set to `-`.
+    This property gets ignored if the property [keyMgrValidation](#keymgrvalidation) is set to `-`.
 
     &nbsp;
 
@@ -402,7 +402,7 @@ unless both projects **also share the following key store files** (see below for
 :   Enter `override` to apply only the custom function.
     Enter `decorate` to apply both the custom function and the built-in function.
 
-**Default**
+**Default Value**
 
 :   `decorate`
 
@@ -430,7 +430,7 @@ unless both projects **also share the following key store files** (see below for
     + `X448` (requires Java 11 or later)
     + `XDH` (requires Java 11 or later)
 
-**Default**
+**Default Value**
 
 :   `DSA`
 
@@ -441,7 +441,7 @@ unless both projects **also share the following key store files** (see below for
 :   The key size in bits when generating key pairs in the keystore files at the first build.
     This property gets ignored if the keystore files already exist.
     Otherwise, if it's `0`, then the property gets overridden by the keytool.
-    Otherwise, the bit size needs to correspond to the property `keyPairAlgorithm`
+    Otherwise, the bit size needs to correspond to the property [keyPairAlgorithm](#keypairalgorithm)
     and be implemented by some security provider which is installed in the JRE.
 
     &nbsp;
@@ -450,7 +450,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [nonNegativeInteger](https://www.w3.org/TR/xmlschema-2/#nonNegativeInteger)
 
-**Default**
+**Default Value**
 
 :   `0`
 
@@ -474,10 +474,10 @@ unless both projects **also share the following key store files** (see below for
     + `PKCS11`
     + `PKCS12`
 
-**Default**
+**Default Value**
 
-:   If the property `licenseKeyFormat` is`V1`, then this property gets set to`JKS`,
-    or else if the property `licenseKeyFormat` starts with `V2/`, then it gets set to `JCEKS`,
+:   If the property [licenseKeyFormat](#licensekeyformat) is set to `V1`, then this property gets set to `JKS`,
+    or else if the property [licenseKeyFormat](#licensekeyformat) starts with `V2/`, then it gets set to `JCEKS`,
     or else to `PKCS12`.
 
 ### `licenseKeyFormat`
@@ -505,7 +505,7 @@ unless both projects **also share the following key store files** (see below for
     + `V2/JSON`
     + `V4`
 
-**Default**
+**Default Value**
 
 :   `V4`
 
@@ -514,7 +514,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The base package name of the generated project.
-    It's best practice using the expression `${groupId}` or `${groupId}.${artifactId}` if this results in a valid
+    It's best practice evaluating the expression `${groupId}` or `${groupId}.${artifactId}` if this results in a valid
     package name.
 
     &nbsp;
@@ -523,9 +523,9 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
-:   The property `groupId`.
+:   The value of the property [groupId](#groupid).
 
 ### `pbeAlgorithm`
 
@@ -557,11 +557,11 @@ unless both projects **also share the following key store files** (see below for
     + `PBEWithHmacSHA384AndAES_256`
     + `PBEWithHmacSHA512AndAES_256`
 
-**Default**
+**Default Value**
 
-:   If the property `licenseKeyFormat` is set to `V1`, then this property gets set to `PBEWithMD5AndDES`,
-    or else if the property `licenseKeyFormat` starts with `V2/`, then it gets set to `PBEWithSHA1AndDESede`,
-    or else to `PBEWithHmacSHA256AndAES_128`.
+:   If the property [licenseKeyFormat](#licensekeyformat) is set to `V1`, then this property gets set to
+    `PBEWithMD5AndDES`, or else if the property [licenseKeyFormat](#licensekeyformat) starts with `V2/`, then it gets
+     set to `PBEWithSHA1AndDESede`, or else to `PBEWithHmacSHA256AndAES_128`.
 
 ### `preferencesType`
 
@@ -580,7 +580,7 @@ unless both projects **also share the following key store files** (see below for
     + `system`
     + `user`
 
-**Default**
+**Default Value**
 
 :   `user`
 
@@ -597,7 +597,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `private.ks`
 
@@ -614,7 +614,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   `public.ks`
 
@@ -624,8 +624,8 @@ unless both projects **also share the following key store files** (see below for
 
 :   The algorithm to use when signing a generated key pair in a keystore file at the first build.
     This property gets ignored if the keystore file already exists.
-    The signature algorithm needs to correspond to the property `keyPairAlgorithm`
-    and be implemented by some security provider which is installed in the JRE.
+    The signature algorithm needs to correspond to the property [keyPairAlgorithm](#keypairalgorithm) and be implemented
+    by some security provider which is installed in the JRE.
 
     &nbsp;
 
@@ -680,9 +680,9 @@ unless both projects **also share the following key store files** (see below for
     + `SHA3-512withRSA`
     + `RSASSA-PSS`
 
-**Default**
+**Default Value**
 
-:   The property gets determined by the keytool.
+:   The property value gets determined by the keytool.
 
 ### `trueLicenseVersion`
 
@@ -696,7 +696,7 @@ unless both projects **also share the following key store files** (see below for
 
 :   [token](https://www.w3.org/TR/xmlschema-2/#token)
 
-**Default**
+**Default Value**
 
 :   The version of the latest release as of the release date of the TrueLicense Maven Archetype.
 
@@ -713,6 +713,6 @@ unless both projects **also share the following key store files** (see below for
 
 :   [boolean](https://www.w3.org/TR/xmlschema-2/#boolean)
 
-**Default**
+**Default Value**
 
 :   `false`

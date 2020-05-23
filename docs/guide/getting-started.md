@@ -2,7 +2,7 @@
 
 ::: tip
 
-To follow this guide you need [Apache Maven](https://maven.apache.org) installed.
+To follow this guide you need to have [Apache Maven](https://maven.apache.org) installed.
 
 :::
 
@@ -31,8 +31,8 @@ chmod +x mvnw
 ./mvnw clean verify
 ```
 
-For a complete list of properties, please check the [Configuration Properties](/reference/config-properties).
-Please also check the [Example Configurations](/guide/example-configs).
+For a complete list of properties, please check the [Configuration Properties](/reference/config-properties.html) page.
+Please also check the [Example Configurations](/guide/example-configs.html) page.
 
 ::: tip
 
@@ -121,7 +121,7 @@ first use.
 Once the FTP license key expires, the user needs to have a regular license key installed in order to continue using your
 software product.
 
-You can check this license key using the wizard again:
+You can check this license key using the licensing wizard again:
 
 ![Licensing Wizard Step 1](/image/ftp/wizard-1.png)
 ![Licensing Wizard Step 2](/image/ftp/wizard-2.png)
