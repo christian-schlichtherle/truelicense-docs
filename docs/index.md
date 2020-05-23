@@ -2,7 +2,7 @@
 home: true
 heroImage: /image/ftp/wizard-2.png
 actionText: Get Started →
-actionLink: /guide/getting-started
+actionLink: /guide/getting-started.html
 features:
 - title: IP Protection
   details: License keys get digitally signed using a configurable algorithm to protect your intellectual property.
