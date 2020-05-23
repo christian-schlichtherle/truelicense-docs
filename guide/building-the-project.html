@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Building The Project | TrueLicense</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="An open source engine for license management on the JVM">
+    <link rel="preload" href="/assets/css/0.styles.aa6d0e5c.css" as="style"><link rel="preload" href="/assets/js/app.e58d73af.js" as="script"><link rel="preload" href="/assets/js/2.950eac3e.js" as="script"><link rel="preload" href="/assets/js/5.e84f96e8.js" as="script"><link rel="prefetch" href="/assets/js/10.f5760d4a.js"><link rel="prefetch" href="/assets/js/11.2d3e6643.js"><link rel="prefetch" href="/assets/js/12.70aea6eb.js"><link rel="prefetch" href="/assets/js/13.2bedf485.js"><link rel="prefetch" href="/assets/js/3.5476d2d9.js"><link rel="prefetch" href="/assets/js/4.6bd23e0e.js"><link rel="prefetch" href="/assets/js/6.5c1ea634.js"><link rel="prefetch" href="/assets/js/7.822ff3c3.js"><link rel="prefetch" href="/assets/js/8.b4ec1b32.js"><link rel="prefetch" href="/assets/js/9.4e3a08c1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa6d0e5c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TrueLicense</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/introduction.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/reference/config-properties.html" class="nav-link">
+  Reference
+</a></div> <a href="https://github.com/christian-schlichtherle/truelicense-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/introduction.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/reference/config-properties.html" class="nav-link">
+  Reference
+</a></div> <a href="https://github.com/christian-schlichtherle/truelicense-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/guide/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/guide/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/guide/example-configurations.html" class="sidebar-link">Example Configurations</a></li><li><a href="/guide/project-structure.html" class="sidebar-link">Project Structure</a></li><li><a href="/guide/setting-up-a-vcs.html" class="sidebar-link">Setting Up A VCS</a></li><li><a href="/guide/building-the-project.html" class="active sidebar-link">Building The Project</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/building-the-project.html#building-the-project" class="sidebar-link">Building The Project</a></li><li class="sidebar-sub-header"><a href="/guide/building-the-project.html#build-artifacts" class="sidebar-link">Build Artifacts</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="building-the-project"><a href="#building-the-project" class="header-anchor">#</a> Building The Project</h2> <p>You can rebuild the project using the following command:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>/usr/libexec/java_home -v <span class="token number">11</span><span class="token variable">)</span></span> <span class="token comment"># on macOS only</span>
+<span class="token function">chmod</span> +x mvnw
+./mvnw clean verify -Pintegration-test
+</code></pre></div><p>The parameter <code>-Pintegration-test</code> triggers the integration tests.</p> <h2 id="build-artifacts"><a href="#build-artifacts" class="header-anchor">#</a> Build Artifacts</h2> <p>Building the sample project produces the following artifacts - listed in alphabetic order:</p> <dl><dt><code>keygen/src/main/resources/${privateKeyStoreFile}</code></dt> <dd><p>The private key store - see below.</p> <p></p></dd> <dt><code>keygen/target/${artifactId}-keygen-${version}-standalone.jar</code></dt> <dd><p>This is the standalone JAR for the Key Generator module.
+It is generated by bundling the regular JAR with all its dependency JARs.
+This is convenient to use on the command line because you just have to add this JAR to the class path.
+<strong>You should never distribute this JAR!</strong></p></dd> <dt><code>keygen/target/${artifactId}-keygen-${version}.jar</code></dt> <dd><p>This is the regular JAR for the Key Generator module.
+This JAR has dependencies on other JARs as specified in the Maven
+<a href="https://maven.apache.org/guides/introduction/introduction-to-the-pom.html" target="_blank" rel="noopener noreferrer">POM<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> for this module.
+<strong>You should never distribute this JAR!</strong></p></dd> <dt><code>keymgr/src/main/resources/${ftpKeyStoreFile}</code></dt> <dd><p>The FTP key store - see below.</p></dd> <dt><code>keymgr/src/main/resources/${publicKeyStoreFile}</code></dt> <dd><p>The public key store - see below.</p></dd> <dt><code>keymgr/target/${artifactId}-keymgr-${version}-guarded.jar</code></dt> <dd><p>This is the obfuscated standalone JAR for the Key Manager module.
+It is generated from the standalone JAR by obfuscating its byte code.
+This improves the security by making attacks on the byte code pretty hard - but not impossible.
+<strong>This is the only JAR which is intended for distribution.</strong></p></dd> <dt><code>keymgr/target/${artifactId}-keymgr-${version}-standalone.jar</code></dt> <dd><p>This is the standalone JAR for the Key Manager module.
+It is generated by bundling the regular JAR with all its dependency JARs.
+This is convenient to use on the command line because you just have to add this JAR to the class path.
+<strong>You should not distribute this JAR without additional obfuscation.</strong></p></dd> <dt><code>keymgr/target/${artifactId}-keymgr-${version}.jar</code></dt> <dd><p>This is the regular JAR for the Key Manager module.
+This JAR has dependencies on other JARs as specified in the Maven POM for this module.
+<strong>You should not distribute this JAR without additional obfuscation.</strong></p></dd> <dt><code>keymgrsrv/target/${artifactId}-keymgrsrv-${version}.jar</code></dt> <dd><p>This is the regular JAR for the Key Manager Service module.
+This JAR has dependencies on other JARs as specified in the Maven POM for this module.
+<strong>You should not distribute this JAR.</strong></p></dd></dl> <h3 id="generated-keystore-files"><a href="#generated-keystore-files" class="header-anchor">#</a> Generated Keystore Files</h3> <p>When you run the build for the first time, the following keystore files get generated:</p> <ul><li><code>keygen/src/main/resources/${privateKeyStoreFile}</code></li> <li><code>keymgr/src/main/resources/${ftpKeyStoreFile}</code></li> <li><code>keymgr/src/main/resources/${publicKeyStoreFile}</code></li></ul> <p>You can use the following command to inspect the entries in the generated key store files:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ keytool -list -v -protected -keystore <span class="token variable">${keyStorePath}</span> -storetype <span class="token variable">${keyStoreType}</span>
+</code></pre></div><p>… where you need to replace <code>${keyStorePath}</code> with the respective path of the keystore file and <code>${keyStoreType}</code> with
+the keystore type which is configured in the parent POM file <code>pom.xml</code>, e.g. <code>JCEKS</code>, <code>JKS</code> or <code>PKCS12</code>.</p> <p>The output of this command will show you a lot of metadata information:
+The distinguished name of the key pair owner and issuer, the validity period of the certificate etc.
+However, TrueLicense only reads the key, its digital signature algorithm and its signature - all other metadata gets
+ignored.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/christian-schlichtherle/truelicense-docs/edit/develop/docs/guide/building-the-project.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub!</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/setting-up-a-vcs.html" class="prev">
+        Setting Up A VCS
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e58d73af.js" defer></script><script src="/assets/js/2.950eac3e.js" defer></script><script src="/assets/js/5.e84f96e8.js" defer></script>
+  </body>
+</html>
