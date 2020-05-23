@@ -27,6 +27,7 @@ module.exports = {
                 'project-structure',
                 'setting-up-a-vcs',
                 'building-the-project',
+                'using-the-cli',
             ],
             '/reference/': [
                 'config-properties',
