@@ -23,7 +23,7 @@ module.exports = {
             '/guide/': [
                 'introduction',
                 'getting-started',
-                'example-configs',
+                'example-configurations',
                 'project-structure',
                 'setting-up-a-vcs',
             ],

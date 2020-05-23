@@ -193,7 +193,7 @@ a single path name element:
 **`keymgr/src/main/resources/public.ks`**
 
 :   This keystore file contains the trusted certificate entry used to consume regular license keys.
-    If you have configured a [Free Trial Period](example-configs.html#free-trial-period) for your software
+    If you have configured a [Free Trial Period](example-configurations.html#free-trial-period) for your software
     product, then it also contains the private key entry used to generate FTP license keys.
     The exact name of its path depends on the value of the properties
     [publicKeyStoreFile](/reference/config-properties.html#publickeystorefile) and
