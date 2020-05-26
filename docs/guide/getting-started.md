@@ -13,7 +13,7 @@ its companion project, the
 [TrueLicense Maven Archetype](https://github.com/christian-schlichtherle/truelicense-maven-archetype), to generate a
 custom project:
 
-``` bash{4,11}
+``` bash{5,11}
 export JAVA_HOME=$(/usr/libexec/java_home -v 11) # on macOS only
 mvn org.apache.maven.plugins:maven-archetype-plugin:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
