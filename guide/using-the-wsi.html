@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using The WSI | TrueLicense</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="An open source engine for license management on the JVM">
+    <link rel="preload" href="/assets/css/0.styles.aa6d0e5c.css" as="style"><link rel="preload" href="/assets/js/app.96460c9f.js" as="script"><link rel="preload" href="/assets/js/2.950eac3e.js" as="script"><link rel="preload" href="/assets/js/12.0d7ca5d4.js" as="script"><link rel="prefetch" href="/assets/js/10.f5760d4a.js"><link rel="prefetch" href="/assets/js/11.1581b943.js"><link rel="prefetch" href="/assets/js/13.53bc8df2.js"><link rel="prefetch" href="/assets/js/14.c959967b.js"><link rel="prefetch" href="/assets/js/15.e35e17d6.js"><link rel="prefetch" href="/assets/js/3.c2e23bb4.js"><link rel="prefetch" href="/assets/js/4.6bd23e0e.js"><link rel="prefetch" href="/assets/js/5.461968f0.js"><link rel="prefetch" href="/assets/js/6.5c1ea634.js"><link rel="prefetch" href="/assets/js/7.98cc3288.js"><link rel="prefetch" href="/assets/js/8.b4ec1b32.js"><link rel="prefetch" href="/assets/js/9.4e3a08c1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa6d0e5c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TrueLicense</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/introduction.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/reference/config-properties.html" class="nav-link">
+  Reference
+</a></div> <a href="https://github.com/christian-schlichtherle/truelicense-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/introduction.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/reference/config-properties.html" class="nav-link">
+  Reference
+</a></div> <a href="https://github.com/christian-schlichtherle/truelicense-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/guide/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/guide/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/guide/example-configurations.html" class="sidebar-link">Example Configurations</a></li><li><a href="/guide/project-structure.html" class="sidebar-link">Project Structure</a></li><li><a href="/guide/setting-up-a-vcs.html" class="sidebar-link">Setting Up A VCS</a></li><li><a href="/guide/building-your-project.html" class="sidebar-link">Building Your Project</a></li><li><a href="/guide/using-the-cli.html" class="sidebar-link">Using The CLI</a></li><li><a href="/guide/using-the-wsi.html" class="active sidebar-link">Using The WSI</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/using-the-wsi.html#starting-the-wsi" class="sidebar-link">Starting The WSI</a></li><li class="sidebar-sub-header"><a href="/guide/using-the-wsi.html#installing-a-license-key" class="sidebar-link">Installing A License Key</a></li><li class="sidebar-sub-header"><a href="/guide/using-the-wsi.html#loading-the-license-key" class="sidebar-link">Loading The License Key</a></li><li class="sidebar-sub-header"><a href="/guide/using-the-wsi.html#verifying-the-license-key" class="sidebar-link">Verifying The License Key</a></li><li class="sidebar-sub-header"><a href="/guide/using-the-wsi.html#uninstalling-the-license-key" class="sidebar-link">Uninstalling The License Key</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="using-the-wsi"><a href="#using-the-wsi" class="header-anchor">#</a> Using The WSI</h1> <p>The Key Manager Service module in your generated project implements a Web Service Interface (WSI) for license key
+management on the consumer side.</p> <h2 id="starting-the-wsi"><a href="#starting-the-wsi" class="header-anchor">#</a> Starting The WSI</h2> <p>The Key Manager Service module is designed to be embedded in a WAR file which gets deployed to a Servlet container like
+<a href="https://tomcat.apache.org" target="_blank" rel="noopener noreferrer">Apache Tomcat<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.
+Therefore, this module does not provide a standalone JAR.
+For testing purposes, there is a main class which runs a simple HTTP server with the embedded WSI.
+You can start it using the following command:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>/usr/libexec/java_home -v <span class="token number">11</span><span class="token variable">)</span></span> <span class="token comment"># on macOS only</span>
+<span class="token function">chmod</span> +x mvnw
+./mvnw clean verify
+java -jar keymgr-service/target/*-keymgr-service-*-standalone.jar
+</code></pre></div><h2 id="installing-a-license-key"><a href="#installing-a-license-key" class="header-anchor">#</a> Installing A License Key</h2> <p>Once the server is running, you can install the license key which you have generated when
+<a href="/guide/using-the-cli.html">using the CLI</a> like this:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license --data-binary @product.lic -H 'Content-Type: application/octet-stream'
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; POST /license HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; Content-Type: application/octet-stream
+&gt; Content-Length: 349
+&gt; 
+* upload completely sent off: 349 out of 349 bytes
+&lt; HTTP/1.1 303 See Other
+&lt; Location: http://localhost:9998/license
+&lt; Content-Length: 0
+&lt; 
+* Connection #0 to host localhost left intact
+* Closing connection 0
+</code></pre></div><p>Note that <code>@product.lic</code> references the license key file which has been previously generated.</p> <p>The server responds with the status code 303 and a new location to indicate that the operation succeeded and that the
+client can now load the license key at the specified location.</p> <h2 id="loading-the-license-key"><a href="#loading-the-license-key" class="header-anchor">#</a> Loading The License Key</h2> <p>You can load the installed license key using:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; GET /license HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 200 OK
+&lt; Content-Type: application/json
+&lt; Content-Length: 153
+&lt; 
+* Connection #0 to host localhost left intact
+{&quot;license&quot;:{&quot;consumerAmount&quot;:1,&quot;consumerType&quot;:&quot;User&quot;,&quot;holder&quot;:&quot;CN=Unknown&quot;,&quot;issued&quot;:1590520369673,&quot;issuer&quot;:&quot;CN=Company Inc.&quot;,&quot;subject&quot;:&quot;StarGazer 2020&quot;}}* Closing connection 0
+</code></pre></div><p>The server responds with the status code 200 and a JSON encoding of the license bean which is encoded in the installed
+license key.</p> <p>If no license key is installed, then the server responds with the status code 404 and an exception message:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; GET /license HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 404 Not Found
+&lt; Content-Type: text/plain
+&lt; Content-Length: 168
+&lt; 
+* Connection #0 to host localhost left intact
+global.namespace.fun.io.api.NoContentException: Cannot locate the key &quot;StarGazer 2020&quot; in the user preferences node for the absolute path &quot;/com/company/product/keymgr&quot;.* Closing connection 0
+</code></pre></div><h2 id="verifying-the-license-key"><a href="#verifying-the-license-key" class="header-anchor">#</a> Verifying The License Key</h2> <p>You can verify the installed license key using:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license?verify=true
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; GET /license?verify=true HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 200 OK
+&lt; Content-Type: application/json
+&lt; Content-Length: 153
+&lt; 
+* Connection #0 to host localhost left intact
+{&quot;license&quot;:{&quot;consumerAmount&quot;:1,&quot;consumerType&quot;:&quot;User&quot;,&quot;holder&quot;:&quot;CN=Unknown&quot;,&quot;issued&quot;:1590520369673,&quot;issuer&quot;:&quot;CN=Company Inc.&quot;,&quot;subject&quot;:&quot;StarGazer 2020&quot;}}* Closing connection 0
+</code></pre></div><p>The server responds with the status code 200 and a JSON encoding of the license bean which is encoded in the installed
+license key.</p> <p>If no license key is installed, then the server responds with the status code 404 and an exception message:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license?verify=true
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; GET /license?verify=true HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 404 Not Found
+&lt; Content-Type: text/plain
+&lt; Content-Length: 168
+&lt; 
+* Connection #0 to host localhost left intact
+global.namespace.fun.io.api.NoContentException: Cannot locate the key &quot;StarGazer 2020&quot; in the user preferences node for the absolute path &quot;/com/company/product/keymgr&quot;.* Closing connection 0
+</code></pre></div><p>If a license key is installed, but the encoded license bean is invalid, then the server responds with the status code
+402 and an exception message:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license?verify=true
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; GET /license?verify=true HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 402 Payment Required
+&lt; Content-Type: text/plain
+&lt; Content-Length: 100
+&lt; 
+* Connection #0 to host localhost left intact
+License validity period has expired at Wednesday, 20 May 2020 21:36:12 Central European Summer Time.* Closing connection 0
+</code></pre></div><h2 id="uninstalling-the-license-key"><a href="#uninstalling-the-license-key" class="header-anchor">#</a> Uninstalling The License Key</h2> <p>You can uninstall the license key using:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license -X DELETE
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; DELETE /license HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 204 No Content
+&lt; 
+* Connection #0 to host localhost left intact
+* Closing connection 0
+</code></pre></div><p>The server responds with the status code 204 to indicate that the operation succeeded with an empty response entity.</p> <p>If no license key is installed or only an auto-generated FTP license key is installed, then the server responds with the
+status code 404 and an exception message:</p> <div class="language- extra-class"><pre class="language-text"><code>$ curl -v localhost:9998/license -X DELETE
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 9998 (#0)
+&gt; DELETE /license HTTP/1.1
+&gt; Host: localhost:9998
+&gt; User-Agent: curl/7.64.1
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 404 Not Found
+&lt; Content-Type: text/plain
+&lt; Content-Length: 168
+&lt; 
+* Connection #0 to host localhost left intact
+global.namespace.fun.io.api.NoContentException: Cannot locate the key &quot;StarGazer 2020&quot; in the user preferences node for the absolute path &quot;/com/company/product/keymgr&quot;.* Closing connection 0
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/christian-schlichtherle/truelicense-docs/edit/develop/docs/guide/using-the-wsi.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub!</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/using-the-cli.html" class="prev">
+        Using The CLI
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.96460c9f.js" defer></script><script src="/assets/js/2.950eac3e.js" defer></script><script src="/assets/js/12.0d7ca5d4.js" defer></script>
+  </body>
+</html>
