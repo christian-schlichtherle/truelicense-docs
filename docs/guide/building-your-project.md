@@ -1,4 +1,4 @@
-## Building Your Project
+# Building Your Project
 
 You can rebuild your generated project using the following command:
 
