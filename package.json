@@ -29,5 +29,5 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs"
   },
-  "version": "0.2.4"
+  "version": "0.3.0-SNAPSHOT"
 }
