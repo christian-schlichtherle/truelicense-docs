@@ -6,9 +6,9 @@ sidebarDepth: 2
 
 The generated project provides an internationalized Command Line Interface (CLI), for the Key Generator and the Key
 Manager modules.
-The CLI gets implemented by the main classes `${package}.keygen.Main` and `${package}.keymgr.Main`, respectively.
+The CLI gets implemented in the main classes `${package}.keygen.Main` and `${package}.keymgr.Main`, respectively.
 
-## Using the Key Generator CLI
+## Using The Key Generator CLI
 
 ### Overview
 
@@ -64,7 +64,7 @@ error stream. You can override the default behavior by specifying
 `-verbose true` or `-verbose false`.
 ```
 
-### Generating a License Key
+### Generating A License Key
 
 #### Using Default Properties
 
@@ -146,7 +146,7 @@ TrueLicense never discloses the property `extra` to users, so you can store any 
 If you want to share some additional information with the user, then you can use the property with the name `info` and
 the type `java.lang.String` instead.
 
-## Using the Key Manager CLI
+## Using The Key Manager CLI
 
 ### Overview
 
@@ -191,7 +191,7 @@ Try these commands with the `keymgr-*-guarded.jar` and notice the difference for
 
 :::
 
-### Installing a License Key
+### Installing A License Key
 
 You can install a license key as follows:
 
@@ -201,7 +201,7 @@ $ java -jar keymgr/target/*-keymgr-*-standalone.jar install product.lic
 
 Note that there is no output unless there is an error, in which case an exception gets printed.
 
-### Loading the License Key
+### Loading The License Key
 
 You can load the installed license key as follows:
 
@@ -246,7 +246,7 @@ Caused by: global.namespace.fun.io.api.NoContentException: Cannot locate the key
 	... 7 more
 ```
 
-### Verifying the License Key
+### Verifying The License Key
 
 You can verify the installed license key using:
 
@@ -310,7 +310,7 @@ global.namespace.truelicense.api.LicenseValidationException: License validity pe
 	at com.company.product.keymgr.Main.main(Main.java:96)
 ```
 
-### Uninstalling the License Key
+### Uninstalling The License Key
 
 You can uninstall the license key using:
 

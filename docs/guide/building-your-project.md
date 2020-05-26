@@ -1,6 +1,6 @@
-## Building The Project
+# Building Your Project
 
-You can rebuild the project using the following command:
+You can rebuild your generated project using the following command:
 
 ``` bash
 export JAVA_HOME=$(/usr/libexec/java_home -v 11) # on macOS only
@@ -79,7 +79,7 @@ When you run the build for the first time, the following keystore files get gene
 You can use the following command to inspect the entries in the generated key store files:
 
 ``` bash
-$ keytool -list -v -protected -keystore ${keyStorePath} -storetype ${keyStoreType}
+keytool -list -v -protected -keystore ${keyStorePath} -storetype ${keyStoreType}
 ```
 
 … where you need to replace `${keyStorePath}` with the respective path of the keystore file and `${keyStoreType}` with
