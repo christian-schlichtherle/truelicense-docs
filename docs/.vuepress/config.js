@@ -28,6 +28,7 @@ module.exports = {
                 'setting-up-a-vcs',
                 'building-your-project',
                 'using-the-cli',
+                'using-the-wsi',
             ],
             '/reference/': [
                 'config-properties',
