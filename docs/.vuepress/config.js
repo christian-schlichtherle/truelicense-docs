@@ -26,7 +26,7 @@ module.exports = {
                 'example-configurations',
                 'project-structure',
                 'setting-up-a-vcs',
-                'building-the-project',
+                'building-your-project',
                 'using-the-cli',
             ],
             '/reference/': [

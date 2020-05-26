@@ -1,6 +1,6 @@
-## Building The Project
+## Building Your Project
 
-You can rebuild the project using the following command:
+You can rebuild your generated project using the following command:
 
 ``` bash
 export JAVA_HOME=$(/usr/libexec/java_home -v 11) # on macOS only
