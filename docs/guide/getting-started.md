@@ -14,7 +14,7 @@ its companion project, the
 custom project:
 
 ``` bash{5,11}
-export JAVA_HOME=$(/usr/libexec/java_home -v 11) # on macOS only
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
 mvn org.apache.maven.plugins:maven-archetype-plugin:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
