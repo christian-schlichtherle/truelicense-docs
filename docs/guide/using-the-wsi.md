@@ -21,7 +21,7 @@ java -jar keymgr-service/target/*-keymgr-service-*-standalone.jar
 ## Installing A License Key
 
 Once the server is running, you can install the license key which you have generated when
-[using the CLI](using-the-cli.html) like this:
+[using the CLI](using-the-cli.md) like this:
 
 ```
 $ curl -v localhost:9998/license --data-binary @product.lic -H 'Content-Type: application/octet-stream'

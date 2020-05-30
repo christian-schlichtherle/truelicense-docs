@@ -2,8 +2,8 @@
 
 The next thing you should do is to setup a version control system for the generated project so that you can track any
 changes to the source code.
-**The VCS will also cover the [private](project-structure.html#key-generator) and
-[public](project-structure.html#key-manager) keystore files which are automatically generated when building the project
+**The VCS will also cover the [private](project-structure.md#key-generator) and
+[public](project-structure.md#key-manager) keystore files which are automatically generated when building the project
 for the first time.**
 
 ## Using Git

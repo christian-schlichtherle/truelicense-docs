@@ -106,7 +106,7 @@ chmod +x mvnw
 
 ::: tip
 
-The next thing you should do is to [setup a version control system](setting-up-a-vcs.html) for the project.
+The next thing you should do is to [setup a version control system](setting-up-a-vcs.md) for the project.
 
 :::
 
@@ -135,7 +135,7 @@ a single path name element:
 
 **`pom.xml`**
 
-:   This file defines the values of the [configuration properties](/reference/config-properties.html) for use by the other
+:   This file defines the values of the [configuration properties](/reference/config-properties.md) for use by the other
     POM files.
     These properties define the algorithms and parameters used by the generated code to implement the licensing schema
     for your software product.
@@ -162,7 +162,7 @@ a single path name element:
 
 :   This keystore file contains the private key entry used to generate regular license keys.
     The exact name of its path depends on the value of the property
-    [privateKeyStoreFile](/reference/config-properties.html#privatekeystorefile).
+    [privateKeyStoreFile](/reference/config-properties.md#privatekeystorefile).
 
     When a project gets created this file doesn't exist yet!
     Maven will automatically create it upon the first build.
@@ -184,7 +184,7 @@ a single path name element:
 
 :   This POM contains a sample configuration for ProGuard which is used for obfuscating the standalone JAR with the
     command line interface (and the Licensing Wizard GUI unless its
-    [disabled](/reference/config-properties.html#disablewizard)) of this module.
+    [disabled](/reference/config-properties.md#disablewizard)) of this module.
 
 **`keymgr/src/main/java/com/company/product/keymgr/LicenseManager.java.vtl`**
 
@@ -193,11 +193,11 @@ a single path name element:
 **`keymgr/src/main/resources/public.ks`**
 
 :   This keystore file contains the trusted certificate entry used to consume regular license keys.
-    If you have configured a [Free Trial Period](example-configurations.html#free-trial-period) for your software
+    If you have configured a [Free Trial Period](example-configurations.md#free-trial-period) for your software
     product, then it also contains the private key entry used to generate FTP license keys.
     The exact name of its path depends on the value of the properties
-    [publicKeyStoreFile](/reference/config-properties.html#publickeystorefile) and
-    [ftpKeyStoreFile](/reference/config-properties.html#ftpkeystorefile), respectively.
+    [publicKeyStoreFile](/reference/config-properties.md#publickeystorefile) and
+    [ftpKeyStoreFile](/reference/config-properties.md#ftpkeystorefile), respectively.
 
     When a project gets created this file doesn't exist yet!
     Maven will automatically create it upon the first build.
