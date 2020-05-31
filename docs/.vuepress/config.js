@@ -10,28 +10,29 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub!',
         nav: [
             {
-                link: '/guide/introduction.html',
+                link: '/guide/introduction.md',
                 text: 'Guide',
             },
             {
-                link: '/reference/config-properties.html',
+                link: '/reference/config-properties.md',
                 text: 'Reference',
             },
         ],
         repo: 'christian-schlichtherle/truelicense-docs',
         sidebar: {
             '/guide/': [
-                'introduction',
-                'getting-started',
-                'example-configurations',
-                'project-structure',
-                'setting-up-a-vcs',
-                'building-your-project',
-                'using-the-cli',
-                'using-the-wsi',
+                'introduction.md',
+                'getting-started.md',
+                'example-configurations.md',
+                'project-structure.md',
+                'setting-up-a-vcs.md',
+                'building-your-project.md',
+                'using-the-cli.md',
+                'using-the-wsi.md',
+                'using-the-api.md',
             ],
             '/reference/': [
-                'config-properties',
+                'config-properties.md',
             ],
         }
     },

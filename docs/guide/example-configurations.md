@@ -1,7 +1,7 @@
 # Example Configurations
 
 This page shows some example configurations which you can use when generating your project.
-For a complete list of properties, please check the [Configuration Properties](/reference/config-properties.html) page.
+For a complete list of properties, please check the [Configuration Properties](/reference/config-properties.md) page.
 
 ## Basic
 
@@ -23,8 +23,8 @@ mvn archetype:generate --batch-mode \
 
 ## Free Trial Period
 
-The following example adds the properties [freeTrialPeriod](/reference/config-properties.html#freetrialperiod) and
-[ftpSecretMarkerClass](/reference/config-properties.html#ftpsecretmarkerclass) to the basic configuration in order to
+The following example adds the properties [freeTrialPeriod](/reference/config-properties.md#freetrialperiod) and
+[ftpSecretMarkerClass](/reference/config-properties.md#ftpsecretmarkerclass) to the basic configuration in order to
 configure a free trial period of thirty days.
 For a production project, please change the property `ftpSecretMarkerClass` because it’s obviously not secret anymore.
 
@@ -55,7 +55,7 @@ Other than that, there is no difference between FTP license keys and regular lic
 Just like an [automatic free trial period](#free-trial-period), this enables you to restrict certain features to regular
 license keys.
 
-The following example adds the property [editions](/reference/config-properties.html#editions) to the basic
+The following example adds the property [editions](/reference/config-properties.md#editions) to the basic
 configuration in order to manage separate license keys for a Standard Edition and an Enterprise Edition of the software
 product.
 Note that due to the given ordering, the Enterprise Edition is a superset of the Standard Edition.
@@ -76,7 +76,7 @@ mvn archetype:generate --batch-mode \
 
 ## Hide Uninstall Action
 
-The following example adds the property [hideUninstallAction](/reference/config-properties.html#hideuninstallaction) to
+The following example adds the property [hideUninstallAction](/reference/config-properties.md#hideuninstallaction) to
 the basic configuration in order to remove the "Uninstall the installed license key" action from the licensing wizard dialog.
 
 ``` bash{8}
@@ -95,7 +95,7 @@ mvn archetype:generate --batch-mode \
 
 ## Disable License Wizard
 
-The following example adds the property [disableWizard](/reference/config-properties.html#disablewizard) to the basic
+The following example adds the property [disableWizard](/reference/config-properties.md#disablewizard) to the basic
 configuration in order to completely remove the license wizard dialog from the generated code.
 
 ``` bash{7}
@@ -114,8 +114,8 @@ mvn archetype:generate --batch-mode \
 
 ## Custom License Management Authorization
 
-The following example adds the properties [keyGenAuthorization](/reference/config-properties.html#keygenauthorization)
-and [keyMgrAuthorization](/reference/config-properties.html#keymgrauthorization) to the basic configuration in order to
+The following example adds the properties [keyGenAuthorization](/reference/config-properties.md#keygenauthorization)
+and [keyMgrAuthorization](/reference/config-properties.md#keymgrauthorization) to the basic configuration in order to
 implement a custom license authorization.
 
 ``` bash{8,9}
@@ -135,8 +135,8 @@ mvn archetype:generate --batch-mode \
 
 ## Custom License Validation
 
-The following example adds the properties [keyGenValidation](/reference/config-properties.html#keygenvalidation) and
-[keyMgrValidation](/reference/config-properties.html#keymgrvalidation) to the basic configuration in order to decorate
+The following example adds the properties [keyGenValidation](/reference/config-properties.md#keygenvalidation) and
+[keyMgrValidation](/reference/config-properties.md#keymgrvalidation) to the basic configuration in order to decorate
 the default license validation function in the Key Generator and Key Manager modules.
 
 ``` bash{8,9}
@@ -156,7 +156,7 @@ mvn archetype:generate --batch-mode \
 
 ## Custom Clock
 
-The following example adds the property [keyMgrClock](/reference/config-properties.html#keymgrclock) to the basic
+The following example adds the property [keyMgrClock](/reference/config-properties.md#keymgrclock) to the basic
 configuration in order to replace the system clock with a custom implementation.
 
 ``` bash{8}
@@ -175,11 +175,11 @@ mvn archetype:generate --batch-mode \
 
 ## V2/XML License Key Format
 
-The following example adds the property [licenseKeyFormat](/reference/config-properties.html#licensekeyformat) to the
+The following example adds the property [licenseKeyFormat](/reference/config-properties.md#licensekeyformat) to the
 basic configuration in order to use the V2/XML license key format and replace the dependency on the Jackson JSON
 Processor with the JAXB API and runtime.
-Note that this also changes the defaults for the [keyStoreType](/reference/config-properties.html#keystoretype) and
-[pbeAlgorithm](/reference/config-properties.html#pbealgorithm).
+Note that this also changes the defaults for the [keyStoreType](/reference/config-properties.md#keystoretype) and
+[pbeAlgorithm](/reference/config-properties.md#pbealgorithm).
 
 ``` bash{8}
 mvn archetype:generate --batch-mode \

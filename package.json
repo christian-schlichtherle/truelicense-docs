@@ -29,5 +29,5 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs"
   },
-  "version": "0.2.5"
+  "version": "0.2.6"
 }

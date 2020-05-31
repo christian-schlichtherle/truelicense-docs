@@ -25,7 +25,7 @@ The [TrueLicense Maven Archetype](https://github.com/christian-schlichtherle/tru
 schemas.
 The Maven archetype generates a project containing separate modules for vending and consuming license keys.
 You can customize the project for your software product without writing code by
-[configuring its properties](/reference/config-properties.html).
+[configuring its properties](/reference/config-properties.md).
 
 ### Features
 

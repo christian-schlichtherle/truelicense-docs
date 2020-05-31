@@ -4,7 +4,7 @@ sidebarDepth: 2
 
 # Using The CLI
 
-The generated project provides an internationalized Command Line Interface (CLI), for the Key Generator and the Key
+Your generated project provides an internationalized Command Line Interface (CLI) for the Key Generator and the Key
 Manager modules.
 The CLI gets implemented in the main classes `${package}.keygen.Main` and `${package}.keymgr.Main`, respectively.
 

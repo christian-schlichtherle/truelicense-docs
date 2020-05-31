@@ -12,7 +12,7 @@ For testing purposes, there is a main class which runs a simple HTTP server with
 You can start it using the following command:
 
 ``` bash
-export JAVA_HOME=$(/usr/libexec/java_home -v 11) # on macOS only
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
 chmod +x mvnw
 ./mvnw clean verify
 java -jar keymgr-service/target/*-keymgr-service-*-standalone.jar
@@ -21,7 +21,7 @@ java -jar keymgr-service/target/*-keymgr-service-*-standalone.jar
 ## Installing A License Key
 
 Once the server is running, you can install the license key which you have generated when
-[using the CLI](using-the-cli.html) like this:
+[using the CLI](using-the-cli.md) like this:
 
 ```
 $ curl -v localhost:9998/license --data-binary @product.lic -H 'Content-Type: application/octet-stream'

@@ -6,7 +6,7 @@ sidebarDepth: 2
 
 Following is the list of configuration properties for generating a project from the TrueLicense Maven Archetype in 
 alphabetic order.
-Please check the [Example Configurations](/guide/example-configurations.html) page to see how to apply these properties.
+Please check the [Example Configurations](/guide/example-configurations.md) page to see how to apply these properties.
 
 ::: tip
 
