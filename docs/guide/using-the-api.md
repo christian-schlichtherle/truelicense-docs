@@ -42,7 +42,8 @@ Add the following dependency to the POM for your software product:
 </dependency>
 ```
 
-Assuming the property values of the page [Getting Started](getting-started.md), this would expand to:
+Assuming the property values of the page [Getting Started](getting-started.md#generating-a-project), this would expand
+to:
 
 ``` xml
 <dependency>
@@ -188,7 +189,8 @@ Add the following dependency to the POM for your software product:
 </dependency>
 ```
 
-Assuming the property values of the page [Getting Started](getting-started.md), this would expand to:
+Assuming the property values of the page [Getting Started](getting-started.md#generating-a-project), this would expand
+to:
 
 ``` xml
 <dependency>
@@ -423,7 +425,7 @@ It’s not necessary to know for which edition the installed license key has bee
 
 :::
 
-### Working with Runtime Exceptions
+### Working with Runtime-Exceptions
 
 The `ConsumerLicenseManager` interface may throw a `LicenseManagementException`, which extends
 `GeneralSecurityException`, which in turn extends the checked `Exception`.

@@ -30,6 +30,7 @@ module.exports = {
                 'using-the-cli.md',
                 'using-the-wsi.md',
                 'using-the-api.md',
+                'updating-your-project.md',
             ],
             '/reference/': [
                 'config-properties.md',
