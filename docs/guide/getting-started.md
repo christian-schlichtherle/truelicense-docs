@@ -112,9 +112,9 @@ This feature can get removed from the GUI with the property
 ![Licensing Wizard Step 6](/image/wizard-6.png)
 ![Licensing Wizard Step 7](/image/wizard-7.png)
 
-## Free Trial Period (FTP)
+## Free Trial Period
 
-You can configure a free trial period for your software product - see
+You can configure a free trial period (FTP) for your software product - see
 [Free Trial Period](example-configurations.md#free-trial-period) example.
 If you follow this example, then a license key with a term of thirty days gets automatically generated for the user at
 first use.
