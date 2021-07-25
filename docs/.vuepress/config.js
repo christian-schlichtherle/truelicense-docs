@@ -6,6 +6,7 @@ module.exports = {
     themeConfig: {
         docsBranch: 'develop',
         docsDir: 'docs',
+        docsRepo: 'christian-schlichtherle/truelicense-docs',
         editLinks: true,
         editLinkText: 'Edit this page on GitHub!',
         nav: [
@@ -18,7 +19,6 @@ module.exports = {
                 text: 'Reference',
             },
         ],
-        repo: 'christian-schlichtherle/truelicense-docs',
         sidebar: {
             '/guide/': [
                 'introduction.md',
