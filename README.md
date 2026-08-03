@@ -1,3 +1,4 @@
+[![Release Notes](https://img.shields.io/github/v/release/christian-schlichtherle/truelicense-docs)](https://github.com/christian-schlichtherle/truelicense-docs/releases/latest)
 [![Apache License 2.0](https://img.shields.io/github/license/christian-schlichtherle/truelicense-docs)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Test Workflow](https://github.com/christian-schlichtherle/truelicense-docs/workflows/test/badge.svg)](https://github.com/christian-schlichtherle/truelicense-docs/actions?query=workflow%3Atest)
 
@@ -6,25 +7,12 @@
 This is the source code repository for the documentation website
 [truelicense.namespace.global](https://truelicense.namespace.global).
 
-## Git Flow
+## Branching
 
-This repository uses [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
-Please make sure to have the [Git Flow (AVH Edition)](https://github.com/petervanderdoes/gitflow-avh) extension
-installed in Git.
-Once the extensions are [installed](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation), you can
-initialize your cloned repository for Git Flow using:
-
-    git flow init --defaults --tag v
-
-To start a feature branch:
-
-    git flow feature start <feature-name>
-
-To finish a feature branch:
-
-    git flow feature finish [<feature-name>]
-
-For a general introduction, please read this [blog posting](https://jeffkreeftmeijer.com/git-flow/).
+`develop` is the only long lived branch, and releases are identified by tags alone.
+There is deliberately no `master`: it existed to mark released code under Git Flow, which this repository no longer
+uses, and it was left behind on the VuePress setup before being removed.
+Work on a topic branch off `develop` and merge it back when it is done.
 
 ## Prerequisites
 

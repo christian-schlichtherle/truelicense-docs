@@ -88,7 +88,11 @@ unzip -p ~/.m2/repository/global/namespace/truelicense-maven-archetype/truelicen
 
 ## Branching and releasing
 
-Git Flow with the `v` tag prefix (`git flow init --defaults --tag v`); see `README.md` for the workflow commands.
+**`develop` is the only long lived branch, and releases are identified by tags alone.** There is deliberately no
+`master`: it existed to mark released code under Git Flow, which this repository no longer uses, and it was left
+behind on the VuePress setup for years before being removed. Cut a release by tagging `develop`; do not recreate a
+release branch to hold the tag. The local clone may still carry `gitflow.*` settings in `.git/config` from that era —
+`git flow release finish` would fail on the missing `master`, so do not reach for it.
 
 Publishing is tag driven, mirroring the sibling repositories. `test.yml` builds every branch and pull request without
 publishing anything. `release.yml` runs on `v*` tags: it calls `test.yml` as a gate, rejects a tag that is not
@@ -98,5 +102,5 @@ publishing anything. `release.yml` runs on `v*` tags: it calls `test.yml` as a g
 Tags mirror the documented TrueLicense version rather than versioning the website separately, which is why
 `package.json` says `4.2.0-SNAPSHOT`: the next release is cut by tagging, and nothing is committed back.
 
-GitHub Pages serves the `gh-pages` branch (Pages `build_type` is `legacy`), so the deployment does not depend on the
-default branch — which is `develop`, not `master`.
+GitHub Pages serves the `gh-pages` branch (Pages `build_type` is `legacy`), so the deployment does not depend on
+`develop` beyond it being the ref that gets tagged.
