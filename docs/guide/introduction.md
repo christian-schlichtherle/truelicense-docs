@@ -49,9 +49,9 @@ Before version 4, TrueLicense and the TrueLicense Maven Archetype were covered b
 Version 3.
 Since version 4,
 TrueLicense is covered by the
-[Apache License 2.0](https://github.com/christian-schlichtherle/truelicense/blob/master/LICENSE),
+[Apache License 2.0](https://github.com/christian-schlichtherle/truelicense/blob/HEAD/LICENSE),
 and the TrueLicense Maven Archetype is covered by the
-[MIT License](https://github.com/christian-schlichtherle/truelicense-maven-archetype/blob/master/LICENSE).
+[MIT License](https://github.com/christian-schlichtherle/truelicense-maven-archetype/blob/HEAD/LICENSE).
 
 *[API]: Application Programming Interface
 *[CLI]: Command Line Interface

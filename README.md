@@ -1,4 +1,4 @@
-[![Apache License 2.0](https://img.shields.io/github/license/christian-schlichtherle/truelicense-docs.svg)](https://github.com/christian-schlichtherle/truelicense/blob/master/LICENSE)
+[![Apache License 2.0](https://img.shields.io/github/license/christian-schlichtherle/truelicense-docs.svg)](https://github.com/christian-schlichtherle/truelicense/blob/HEAD/LICENSE)
 
 # TrueLicense Docs
 

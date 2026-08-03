@@ -29,7 +29,7 @@ footer: Apache License 2.0 | Copyright © 2020 Schlichtherle IT Services
     <div>
         <a href="https://github.com/christian-schlichtherle/truelicense/releases/latest"><img src="https://img.shields.io/github/v/release/christian-schlichtherle/truelicense" alt="Release Notes"></a>
         <a href="https://search.maven.org/artifact/global.namespace.truelicense/truelicense"><img src="https://img.shields.io/maven-central/v/global.namespace.truelicense/truelicense?cacheSeconds=3600" alt="Maven Central"></a>
-        <a href="https://github.com/christian-schlichtherle/truelicense/blob/master/LICENSE"><img src="https://img.shields.io/github/license/christian-schlichtherle/truelicense" alt="Apache License 2.0"></a>
+        <a href="https://github.com/christian-schlichtherle/truelicense/blob/HEAD/LICENSE"><img src="https://img.shields.io/github/license/christian-schlichtherle/truelicense" alt="Apache License 2.0"></a>
         <a href="https://travis-ci.org/christian-schlichtherle/truelicense"><img src="https://api.travis-ci.org/christian-schlichtherle/truelicense.svg" alt="Build Status"></a>
     </div>
     <div>
