@@ -1,4 +1,5 @@
-[![Apache License 2.0](https://img.shields.io/github/license/christian-schlichtherle/truelicense-docs.svg)](https://github.com/christian-schlichtherle/truelicense/blob/HEAD/LICENSE)
+[![Apache License 2.0](https://img.shields.io/github/license/christian-schlichtherle/truelicense-docs)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Test And Deploy Workflow](https://github.com/christian-schlichtherle/truelicense-docs/workflows/Test%20And%20Deploy/badge.svg)](https://github.com/christian-schlichtherle/truelicense-docs/actions?query=workflow%3A%22Test+And+Deploy%22)
 
 # TrueLicense Docs
 
