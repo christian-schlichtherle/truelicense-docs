@@ -1,7 +1,3 @@
----
-sidebarDepth: 2
----
-
 # Updating Your Project
 
 This page shows you how to update your project _after_ you have put it into production for selling license keys.
@@ -138,7 +134,6 @@ However, when another edition gets added later, this needs to be done manually.
 You can do it like this:
 
 ``` bash
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
 chmod +x mvnw
 ./mvnw generate-resources \
     -Pgenerate-private-key-store \
@@ -150,7 +145,6 @@ chmod +x mvnw
 For example, you can update the keystores for an edition named `enterprise` like this:
 
 ``` bash
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
 chmod +x mvnw
 ./mvnw generate-resources \
     -Pgenerate-private-key-store \

@@ -1,7 +1,3 @@
----
-sidebarDepth: 2
----
-
 # Using the API
 
 Your generated project provides an internationalized Application Programming Interface (API) for vending and consuming
@@ -12,7 +8,7 @@ This page walks you through the typical lifecycle of a license key using these m
 
 The generated classes in these modules depend on the TrueLicense API, among others. 
 Source code and Javadoc for the TrueLicense API are available on
-[Maven Central](https://search.maven.org/search?q=g:global.namespace.truelicense).
+[Maven Central](https://central.sonatype.com/namespace/global.namespace.truelicense).
 
 :::
 
@@ -66,15 +62,14 @@ then you may need to add only selected JARs to the class path.
 First, copy the runtime dependencies to the directory `keygen/target/dependency` using:
 
 ``` bash
-$ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
 $ chmod +x mvnw
 $ ./mvnw package dependency:copy-dependencies -DincludeScope=runtime --projects keygen
 [...]
 $ ls keygen/target/dependency
-fun-io-api-2.3.0.jar             jackson-annotations-2.10.2.jar   truelicense-core-4.0.3.jar
-fun-io-bios-2.3.0.jar            jackson-core-2.10.2.jar          truelicense-obfuscate-4.0.3.jar
-fun-io-jackson-2.3.0.jar         jackson-databind-2.10.2.jar      truelicense-spi-4.0.3.jar
-fun-io-spi-2.3.0.jar             truelicense-api-4.0.3.jar        truelicense-v4-4.0.3.jar
+fun-io-api-2.4.1.jar              jackson-annotations-2.22.jar      truelicense-core-4.1.4.jar
+fun-io-bios-2.4.1.jar             jackson-core-2.22.1.jar           truelicense-obfuscate-4.1.4.jar
+fun-io-jackson-2.4.1.jar          jackson-databind-2.22.1.jar       truelicense-spi-4.1.4.jar
+fun-io-spi-2.4.1.jar              truelicense-api-4.1.4.jar         truelicense-v4-4.1.4.jar
 ```
 
 Now you can select each JAR which you want to add to the classpath from this directory.
@@ -213,16 +208,15 @@ then you may need to add only selected JARs to the class path.
 First, copy the runtime dependencies to the directory `keymgr/target/dependency` using:
 
 ``` bash
-$ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
 $ chmod +x mvnw
 $ ./mvnw package dependency:copy-dependencies -DincludeScope=runtime --projects keymgr --also-make
 [...]
 $ ls keymgr/target/dependency
-fun-io-api-2.3.0.jar             jackson-core-2.10.2.jar          truelicense-spi-4.0.3.jar
-fun-io-bios-2.3.0.jar            jackson-databind-2.10.2.jar      truelicense-swing-4.0.3.jar
-fun-io-jackson-2.3.0.jar         truelicense-api-4.0.3.jar        truelicense-ui-4.0.3.jar
-fun-io-spi-2.3.0.jar             truelicense-core-4.0.3.jar       truelicense-v4-4.0.3.jar
-jackson-annotations-2.10.2.jar   truelicense-obfuscate-4.0.3.jar
+fun-io-api-2.4.1.jar              jackson-core-2.22.1.jar           truelicense-spi-4.1.4.jar
+fun-io-bios-2.4.1.jar             jackson-databind-2.22.1.jar       truelicense-swing-4.1.4.jar
+fun-io-jackson-2.4.1.jar          truelicense-api-4.1.4.jar         truelicense-ui-4.1.4.jar
+fun-io-spi-2.4.1.jar              truelicense-core-4.1.4.jar        truelicense-v4-4.1.4.jar
+jackson-annotations-2.22.jar      truelicense-obfuscate-4.1.4.jar
 ```
 
 Now you can select each JAR which you want to add to the classpath from this directory.

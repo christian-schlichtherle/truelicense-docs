@@ -1,0 +1,46 @@
+/*
+ * Keeps the green brand colour of the previous VuePress theme.
+ * The light mode text colour is darkened for legible contrast on white.
+ */
+
+:root {
+    --vp-c-brand-1: #2f8f63;
+    --vp-c-brand-2: #3eaf7c;
+    --vp-c-brand-3: #3eaf7c;
+    --vp-c-brand-soft: rgba(62, 175, 124, 0.14);
+}
+
+.dark {
+    --vp-c-brand-1: #52c48f;
+    --vp-c-brand-2: #3eaf7c;
+    --vp-c-brand-3: #35996c;
+    --vp-c-brand-soft: rgba(62, 175, 124, 0.16);
+}
+
+/*
+ * The badge rows below the features on the home page. The default theme sets `img { display: block }`, which would
+ * otherwise put every single badge on a line of its own.
+ *
+ * No horizontal padding or width of its own: the surrounding home page container already aligns this element with the
+ * feature grid, so anything added here would indent the badges relative to the feature cards.
+ */
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    justify-content: space-between;
+    padding: 24px 0 64px;
+}
+
+.badges-group {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badges img {
+    display: inline-block;
+    height: 20px;
+}

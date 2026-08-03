@@ -1,8 +1,22 @@
 ---
-home: true
-heroImage: /image/ftp/wizard-2.png
-actionText: Get Started →
-actionLink: /guide/getting-started.md
+layout: home
+hero:
+  name: TrueLicense
+  text: License management on the JVM
+  tagline: An open source engine for generating, installing, verifying and uninstalling license keys.
+  image:
+    src: /image/ftp/wizard-2.png
+    alt: Licensing Wizard
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/getting-started
+    - theme: alt
+      text: Introduction
+      link: /guide/introduction
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/christian-schlichtherle/truelicense
 features:
 - title: IP Protection
   details: License keys get digitally signed using a configurable algorithm to protect your intellectual property.
@@ -22,17 +36,16 @@ features:
   details: Provides an API, a CLI, a GUI, a ReST-based WSI, and JSF pages.
 - title: Many Modules
   details: Separate modules make it easy for you to shop for exactly the features, technologies and interfaces you need.
-footer: Apache License 2.0 | Copyright © 2020 Schlichtherle IT Services
 ---
 
-<div style="display: flex; justify-content: space-between">
-    <div>
+<div class="badges">
+    <div class="badges-group">
         <a href="https://github.com/christian-schlichtherle/truelicense/releases/latest"><img src="https://img.shields.io/github/v/release/christian-schlichtherle/truelicense" alt="Release Notes"></a>
-        <a href="https://search.maven.org/artifact/global.namespace.truelicense/truelicense"><img src="https://img.shields.io/maven-central/v/global.namespace.truelicense/truelicense?cacheSeconds=3600" alt="Maven Central"></a>
-        <a href="https://github.com/christian-schlichtherle/truelicense/blob/HEAD/LICENSE"><img src="https://img.shields.io/github/license/christian-schlichtherle/truelicense" alt="Apache License 2.0"></a>
-        <a href="https://travis-ci.org/christian-schlichtherle/truelicense"><img src="https://api.travis-ci.org/christian-schlichtherle/truelicense.svg" alt="Build Status"></a>
+        <a href="https://central.sonatype.com/artifact/global.namespace.truelicense/truelicense"><img src="https://img.shields.io/maven-central/v/global.namespace.truelicense/truelicense?cacheSeconds=3600" alt="Maven Central"></a>
+        <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/christian-schlichtherle/truelicense" alt="Apache License 2.0"></a>
+        <a href="https://github.com/christian-schlichtherle/truelicense/actions?query=workflow%3Atest"><img src="https://github.com/christian-schlichtherle/truelicense/workflows/test/badge.svg" alt="Test Workflow"></a>
     </div>
-    <div>
+    <div class="badges-group">
         <a href="https://github.com/christian-schlichtherle/truelicense"><img src="https://img.shields.io/github/watchers/christian-schlichtherle/truelicense?style=social" alt="Watch repo on GitHub"></a>
         <a href="https://github.com/christian-schlichtherle/truelicense"><img src="https://img.shields.io/github/stars/christian-schlichtherle/truelicense?style=social" alt="Star repo on GitHub"></a>
         <a href="https://github.com/christian-schlichtherle/truelicense"><img src="https://img.shields.io/github/forks/christian-schlichtherle/truelicense?style=social" alt="Fork repo on GitHub"></a>

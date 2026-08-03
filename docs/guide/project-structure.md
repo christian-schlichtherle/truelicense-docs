@@ -1,7 +1,3 @@
----
-sidebarDepth: 2
----
-
 # Project Structure
 
 ## Layout

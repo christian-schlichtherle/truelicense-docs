@@ -13,18 +13,17 @@ its companion project, the
 [TrueLicense Maven Archetype](https://github.com/christian-schlichtherle/truelicense-maven-archetype), to generate a
 custom project:
 
-``` bash{5,11}
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # on macOS only
+``` bash{4,10}
 mvn org.apache.maven.plugins:maven-archetype-plugin:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='stargazer' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
     -Dpassword='unsafe2020' \
     -Dsubject='StarGazer 2020' \
-    -DtrueLicenseVersion='4.0.3' \
+    -DtrueLicenseVersion='4.1.4' \
     -Dversion='1.0-SNAPSHOT'
 cd stargazer
 chmod +x mvnw
@@ -51,13 +50,11 @@ While both projects may have an independent release cycle, their version numbers
 
 :::
 
-::: warning
+::: tip
 
-As of version 4.0.3, the TrueLicense Maven Archetype does not fully support Java 14 yet.
-It's recommended to set it to version 11 for now. 
-
-This constraint only applies to the TrueLicense Maven Archetype:
-TrueLicense version 4.0.3 supports Java 14 just fine!
+As of version 4.1.4, both projects build on every LTS release from JDK 8 through 25, and the generated project targets
+Java 8 bytecode regardless of the JDK you use.
+So you can simply build with whatever recent JDK you have installed.
 
 :::
 

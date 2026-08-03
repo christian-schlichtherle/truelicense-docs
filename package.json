@@ -1,15 +1,18 @@
 {
   "author": "Christian Schlichtherle",
   "bugs": {
-    "url": "https://github.com/christian-schlichtherle/truelicense/issues"
+    "url": "https://github.com/christian-schlichtherle/truelicense-docs/issues"
   },
   "description": "Static site generator for the TrueLicense documentation",
   "devDependencies": {
-    "markdown-it-abbr": "1.0",
-    "markdown-it-deflist": "2.1",
-    "vuepress": "1.8"
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-deflist": "^4.0.0",
+    "vitepress": "^1.6.4"
   },
-  "homepage": "https://github.com/christian-schlichtherle/truelicense",
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://truelicense.namespace.global",
   "keywords": [
     "TrueLicense",
     "open source",
@@ -24,10 +27,15 @@
   ],
   "license": "Apache-2.0",
   "name": "truelicense-docs",
-  "repository": "github:christian-schlichtherle/truelicense",
+  "private": true,
+  "repository": "github:christian-schlichtherle/truelicense-docs",
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:dev": "vuepress dev docs"
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:preview": "vitepress preview docs"
   },
-  "version": "0.2.9-SNAPSHOT"
+  "version": "4.2.0-SNAPSHOT",
+  "overrides": {
+    "esbuild": "^0.25.0"
+  }
 }

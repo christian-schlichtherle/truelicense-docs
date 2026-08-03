@@ -1,0 +1,60 @@
+# Publishes the site to the gh-pages branch when a v* tag is pushed. The tag is the only input, so the published site
+# always corresponds to a named, immutable version - which is what keeps this repository in sync with the releases of
+# TrueLicense and the TrueLicense Maven Archetype: tag v4.1.4 here for TrueLicense 4.1.4.
+#
+# Nothing is committed back to the develop branch, so the version in package.json stays a snapshot.
+#
+# A manual run (workflow_dispatch) republishes whatever ref is selected without creating a GitHub release. Use it to
+# redeploy an existing tag, not to publish new content.
+concurrency:
+  cancel-in-progress: false
+  group: release
+jobs:
+  # The same build that runs on every branch, as a gate. Tag pushes do not trigger test.yml on their own.
+  test:
+    uses: ./.github/workflows/test.yml
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      # GitHub Pages serves whatever lands on gh-pages, so a malformed tag would otherwise publish under a bogus
+      # version without anything failing.
+      - if: github.ref_type == 'tag'
+        name: Verify the tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          case "$VERSION" in
+            *-SNAPSHOT) echo "::error::$GITHUB_REF_NAME is a snapshot version"; exit 1 ;;
+            [0-9]*.[0-9]*.[0-9]*) ;;
+            *) echo "::error::$GITHUB_REF_NAME is not vMAJOR.MINOR.PATCH"; exit 1 ;;
+          esac
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          cache: npm
+          node-version: '24'
+      - name: Install the dependencies
+        run: npm ci
+      - name: Build the site
+        run: npm run docs:build
+      # The CNAME file in docs/public keeps the custom domain across deployments.
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          user_name: github-actions[bot]
+      - if: github.ref_type == 'tag'
+        name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag
+name: release
+on:
+  push:
+    tags: [ 'v*' ]
+  workflow_dispatch:

@@ -1,0 +1,26 @@
+# Builds the site on every branch and pull request. Nothing is published here - see release.yml. This workflow is
+# also called by release.yml as a gate, so a broken build cannot be published.
+concurrency:
+  cancel-in-progress: true
+  group: test-${{ github.ref }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          cache: npm
+          node-version: '24'
+      - name: Install the dependencies
+        run: npm ci
+      - name: Build the site
+        run: npm run docs:build
+name: test
+on:
+  pull_request:
+    branches: [ '**' ]
+  push:
+    branches: [ '**' ]
+  workflow_call:

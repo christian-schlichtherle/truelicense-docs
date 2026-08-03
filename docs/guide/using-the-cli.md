@@ -1,7 +1,3 @@
----
-sidebarDepth: 2
----
-
 # Using The CLI
 
 Your generated project provides an internationalized Command Line Interface (CLI) for the Key Generator and the Key

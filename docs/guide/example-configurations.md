@@ -12,7 +12,7 @@ It configures a software product with only one edition and no free trial period.
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='baseline' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
@@ -32,7 +32,7 @@ For a production project, please change the property `ftpSecretMarkerClass` beca
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='freeTrialPeriod' \
     -Dcompany='Company Inc.' \
     -DfreeTrialPeriod='30' \
@@ -64,7 +64,7 @@ Note that due to the given ordering, the Enterprise Edition is a superset of the
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='multipleProductEditions' \
     -Dcompany='Company Inc.' \
     -Deditions='enterprise standard' \
@@ -83,7 +83,7 @@ the baseline configuration in order to remove the "Uninstall the installed licen
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='hideUninstallAction' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
@@ -102,7 +102,7 @@ configuration in order to completely remove the license wizard dialog from the g
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='disableWizard' \
     -Dcompany='Company Inc.' \
     -DdisableWizard='true' \
@@ -122,7 +122,7 @@ implement a custom license authorization.
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='customAuthorization' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
@@ -143,7 +143,7 @@ the default license validation function in the Key Generator and Key Manager mod
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='customValidation' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
@@ -163,7 +163,7 @@ configuration in order to replace the system clock with a custom implementation.
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='customClock' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
@@ -185,7 +185,7 @@ Note that this also changes the defaults for the [keyStoreType](/reference/confi
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId='global.namespace.truelicense-maven-archetype' \
     -DarchetypeArtifactId='truelicense-maven-archetype' \
-    -DarchetypeVersion='4.0.3' \
+    -DarchetypeVersion='4.1.4' \
     -DartifactId='v2XmlLicenseKeyFormat' \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \

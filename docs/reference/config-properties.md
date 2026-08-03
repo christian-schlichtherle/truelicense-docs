@@ -1,7 +1,3 @@
----
-sidebarDepth: 2
----
-
 # Configuration Properties
 
 Following is the list of configuration properties for generating your project from the TrueLicense Maven Archetype in 
@@ -39,7 +35,7 @@ unless both projects **also share the following key store files** (see below for
 **Description**
 
 :   The Maven artifact ID of the root
-    [POM](http://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+    [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
     for the generated project.
     This could match the name of your software product, e.g. `product`, or be generic, e.g. `license`.
 
