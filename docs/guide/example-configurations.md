@@ -148,7 +148,7 @@ mvn archetype:generate --batch-mode \
     -Dcompany='Company Inc.' \
     -DgroupId='com.company.product' \
     -DkeyGenValidation='new com.company.product.keygen.Main.NoLicenseValidation()' \
-    -DkeyMgrValidation='new com.company.product.keygen.Main.NoLicenseValidation()' \
+    -DkeyMgrValidation='new com.company.product.keymgr.Main.NoLicenseValidation()' \
     -Dpassword='unsafe2020' \
     -Dsubject='StarGazer 2020' \
     -Dversion='1.0-SNAPSHOT'
